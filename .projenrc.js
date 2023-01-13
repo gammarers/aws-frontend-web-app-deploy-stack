@@ -13,9 +13,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
   keywords: ['aws', 'cdk', 'cloudfront', 'cdn', 'web', 'spa', 'deploy'],
   repositoryUrl: 'https://github.com/yicr/frontend-web-app-deploy-stack.git',
 
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  deps: [
+    '@yicr/secure-cloudfront-origin-bucket@0.1.0',
+    '@yicr/secure-frontend-web-app-cloudfront-distribution@0.2.0',
+  ],
 });
 project.synth();
