@@ -1,6 +1,6 @@
 {
   "name": "@yicr/frontend-web-app-deploy-stack",
-  "description": "AWS CloudFront distribution for frontend web app (spa) optimized.",
+  "description": "This is an AWS CDK Construct to make deploying a Frontend Web App (SPA) deploy to S3 behind CloudFront.",
   "repository": {
     "type": "git",
     "url": "https://github.com/yicr/frontend-web-app-deploy-stack.git"

@@ -1,7 +1,7 @@
 const { awscdk, javascript } = require('projen');
 
 const PROJECT_NAME = '@yicr/frontend-web-app-deploy-stack';
-const PROJECT_DESCRIPTION = 'AWS CloudFront distribution for frontend web app (spa) optimized.';
+const PROJECT_DESCRIPTION = 'This is an AWS CDK Construct to make deploying a Frontend Web App (SPA) deploy to S3 behind CloudFront.';
 
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'yicr',
