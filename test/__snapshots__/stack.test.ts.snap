@@ -29,6 +29,12 @@ Object {
             "HostedZoneId": "Z0000000000000000000Q",
           },
         ],
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "FrontendWebAppDeployStack/Certificate",
+          },
+        ],
         "ValidationMethod": "DNS",
       },
       "Type": "AWS::CertificateManager::Certificate",
@@ -41,7 +47,7 @@ Object {
       "Properties": Object {
         "Code": Object {
           "S3Bucket": "cdk-hnb659fds-assets-012345678901-us-east-1",
-          "S3Key": "f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da.zip",
+          "S3Key": "HASH.zip",
         },
         "Handler": "index.handler",
         "Layers": Array [
@@ -215,7 +221,7 @@ Object {
       "Properties": Object {
         "Content": Object {
           "S3Bucket": "cdk-hnb659fds-assets-012345678901-us-east-1",
-          "S3Key": "c409e6c5845f1f349df8cd84e160bf6f1c35d2b060b63e1f032f9bd39d4542cc.zip",
+          "S3Key": "HASH.zip",
         },
         "Description": "/opt/awscli/aws",
       },
@@ -244,7 +250,7 @@ Object {
           "cdk-hnb659fds-assets-012345678901-us-east-1",
         ],
         "SourceObjectKeys": Array [
-          "b8629eadcc6edbc3a6f4db1ae1f110e96de3aae03f4b150df47547d9e6b641a8.zip",
+          "HASH.zip",
         ],
       },
       "Type": "Custom::CDKBucketDeployment",
@@ -331,6 +337,9 @@ Object {
             "Value": "true",
           },
         ],
+        "VersioningConfiguration": Object {
+          "Status": "Enabled",
+        },
       },
       "Type": "AWS::S3::Bucket",
       "UpdateReplacePolicy": "Retain",
