@@ -20,6 +20,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   devDeps: [
     '@yicr/secure-cloudfront-origin-bucket@0.2.8',
     '@yicr/secure-frontend-web-app-cloudfront-distribution@0.3.6',
+    '@yicr/jest-serializer-cdk-asset',
   ],
   peerDeps: [
     '@yicr/secure-cloudfront-origin-bucket@0.2.8',
@@ -33,6 +34,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
   autoApproveOptions: {
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['yicr'],
+  },
+  jestOptions: {
+    jestConfig: {
+      snapshotSerializers: ['<rootDir>/node_modules/@yicr/jest-serializer-cdk-asset'],
+    },
   },
 });
 project.synth();

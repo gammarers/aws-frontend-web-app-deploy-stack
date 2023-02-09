@@ -21,6 +21,10 @@
       "type": "build"
     },
     {
+      "name": "@yicr/jest-serializer-cdk-asset",
+      "type": "build"
+    },
+    {
       "name": "@yicr/secure-cloudfront-origin-bucket",
       "version": "0.2.8",
       "type": "build"
