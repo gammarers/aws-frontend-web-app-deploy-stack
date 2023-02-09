@@ -13,9 +13,13 @@ const project = new awscdk.AwsCdkConstructLibrary({
   keywords: ['aws', 'cdk', 'cloudfront', 'cdn', 'web', 'spa', 'deploy'],
   repositoryUrl: 'https://github.com/yicr/frontend-web-app-deploy-stack.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
-  deps: [
-    '@yicr/secure-cloudfront-origin-bucket@0.1.0',
-    '@yicr/secure-frontend-web-app-cloudfront-distribution@0.2.0',
+  devDeps: [
+    '@yicr/secure-cloudfront-origin-bucket@^0.2.6',
+    '@yicr/secure-frontend-web-app-cloudfront-distribution@^0.3.6',
+  ],
+  peerDeps: [
+    '@yicr/secure-cloudfront-origin-bucket@^0.2.6',
+    '@yicr/secure-frontend-web-app-cloudfront-distribution@^0.3.6',
   ],
   depsUpgradeOptions: {
     workflowOptions: {
