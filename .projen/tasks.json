@@ -96,7 +96,7 @@
       "description": "Synthesize project files",
       "steps": [
         {
-          "exec": "node .projenrc.js"
+          "exec": "ts-node --project tsconfig.dev.json .projenrc.ts"
         }
       ]
     },
@@ -126,7 +126,7 @@
       "description": "Runs eslint against the codebase",
       "steps": [
         {
-          "exec": "eslint --ext .ts,.tsx --fix --no-error-on-unmatched-pattern src test build-tools .projenrc.js"
+          "exec": "eslint --ext .ts,.tsx --fix --no-error-on-unmatched-pattern src test build-tools projenrc .projenrc.ts"
         }
       ]
     },
@@ -247,19 +247,19 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='aws-cdk-lib,constructs,@yicr/secure-cloudfront-origin-bucket,@yicr/secure-frontend-web-app-cloudfront-distribution'"
+          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='@yicr/secure-cloudfront-origin-bucket,@yicr/secure-frontend-web-app-cloudfront-distribution,aws-cdk-lib,constructs'"
         },
         {
-          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='aws-cdk-lib,constructs,@yicr/secure-cloudfront-origin-bucket,@yicr/secure-frontend-web-app-cloudfront-distribution'"
+          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='@yicr/secure-cloudfront-origin-bucket,@yicr/secure-frontend-web-app-cloudfront-distribution,aws-cdk-lib,constructs'"
         },
         {
-          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='aws-cdk-lib,constructs,@yicr/secure-cloudfront-origin-bucket,@yicr/secure-frontend-web-app-cloudfront-distribution'"
+          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='@yicr/secure-cloudfront-origin-bucket,@yicr/secure-frontend-web-app-cloudfront-distribution,aws-cdk-lib,constructs'"
         },
         {
-          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='aws-cdk-lib,constructs,@yicr/secure-cloudfront-origin-bucket,@yicr/secure-frontend-web-app-cloudfront-distribution'"
+          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='@yicr/secure-cloudfront-origin-bucket,@yicr/secure-frontend-web-app-cloudfront-distribution,aws-cdk-lib,constructs'"
         },
         {
-          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='aws-cdk-lib,constructs,@yicr/secure-cloudfront-origin-bucket,@yicr/secure-frontend-web-app-cloudfront-distribution'"
+          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='@yicr/secure-cloudfront-origin-bucket,@yicr/secure-frontend-web-app-cloudfront-distribution,aws-cdk-lib,constructs'"
         },
         {
           "exec": "yarn install --check-files"

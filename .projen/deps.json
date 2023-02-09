@@ -21,8 +21,22 @@
       "type": "build"
     },
     {
+      "name": "@yicr/jest-serializer-cdk-asset",
+      "type": "build"
+    },
+    {
+      "name": "@yicr/secure-cloudfront-origin-bucket",
+      "version": "0.2.8",
+      "type": "build"
+    },
+    {
+      "name": "@yicr/secure-frontend-web-app-cloudfront-distribution",
+      "version": "0.3.6",
+      "type": "build"
+    },
+    {
       "name": "aws-cdk-lib",
-      "version": "2.43.0",
+      "version": "2.62.0",
       "type": "build"
     },
     {
@@ -93,6 +107,10 @@
       "type": "build"
     },
     {
+      "name": "ts-node",
+      "type": "build"
+    },
+    {
       "name": "typescript",
       "type": "build"
     },
@@ -107,8 +125,18 @@
       "type": "override"
     },
     {
+      "name": "@yicr/secure-cloudfront-origin-bucket",
+      "version": "0.2.8",
+      "type": "peer"
+    },
+    {
+      "name": "@yicr/secure-frontend-web-app-cloudfront-distribution",
+      "version": "0.3.6",
+      "type": "peer"
+    },
+    {
       "name": "aws-cdk-lib",
-      "version": "^2.43.0",
+      "version": "^2.62.0",
       "type": "peer"
     },
     {
@@ -118,12 +146,12 @@
     },
     {
       "name": "@yicr/secure-cloudfront-origin-bucket",
-      "version": "0.1.0",
+      "version": "^0.2.8",
       "type": "runtime"
     },
     {
       "name": "@yicr/secure-frontend-web-app-cloudfront-distribution",
-      "version": "0.2.0",
+      "version": "^0.3.6",
       "type": "runtime"
     }
   ],
