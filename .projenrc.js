@@ -17,5 +17,14 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '@yicr/secure-cloudfront-origin-bucket@0.1.0',
     '@yicr/secure-frontend-web-app-cloudfront-distribution@0.2.0',
   ],
+  depsUpgradeOptions: {
+    workflowOptions: {
+      labels: ['auto-approve', 'auto-merge'],
+    },
+  },
+  autoApproveOptions: {
+    secret: 'GITHUB_TOKEN',
+    allowedUsernames: ['yicr'],
+  },
 });
 project.synth();
