@@ -15,17 +15,15 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl: 'https://github.com/yicr/frontend-web-app-deploy-stack.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
   deps: [
-    '@yicr/secure-cloudfront-origin-bucket@^0.2.10',
-    '@yicr/secure-frontend-web-app-cloudfront-distribution@^0.3.10',
+    '@yicr/secure-cloudfront-origin-bucket',
+    '@yicr/secure-frontend-web-app-cloudfront-distribution',
   ],
   devDeps: [
-    '@yicr/secure-cloudfront-origin-bucket@0.2.10',
-    '@yicr/secure-frontend-web-app-cloudfront-distribution@0.3.10',
     '@yicr/jest-serializer-cdk-asset',
   ],
   peerDeps: [
-    '@yicr/secure-cloudfront-origin-bucket@0.2.10',
-    '@yicr/secure-frontend-web-app-cloudfront-distribution@0.3.10',
+    '@yicr/secure-cloudfront-origin-bucket',
+    '@yicr/secure-frontend-web-app-cloudfront-distribution',
   ],
   depsUpgradeOptions: {
     workflowOptions: {
