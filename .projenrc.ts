@@ -1,4 +1,4 @@
-const { awscdk, javascript } = require('projen');
+import { awscdk, javascript } from 'projen';
 
 const PROJECT_NAME = '@yicr/frontend-web-app-deploy-stack';
 const PROJECT_DESCRIPTION = 'This is an AWS CDK Construct to make deploying a Frontend Web App (SPA) deploy to S3 behind CloudFront.';
