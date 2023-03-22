@@ -25,6 +25,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '@yicr/secure-cloudfront-origin-bucket',
     '@yicr/secure-frontend-web-app-cloudfront-distribution',
   ],
+  minNodeVersion: '16.0.0',
+  workflowNodeVersion: '16.19.1',
   depsUpgradeOptions: {
     workflowOptions: {
       labels: ['auto-approve', 'auto-merge'],
