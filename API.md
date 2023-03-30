@@ -56,6 +56,7 @@ new FrontendWebAppDeployStack(scope: Construct, id: string, props: FrontendWebAp
 | <code><a href="#@yicr/frontend-web-app-deploy-stack.FrontendWebAppDeployStack.resolve">resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
 | <code><a href="#@yicr/frontend-web-app-deploy-stack.FrontendWebAppDeployStack.splitArn">splitArn</a></code> | Splits the provided ARN into its components. |
 | <code><a href="#@yicr/frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toJsonString">toJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
+| <code><a href="#@yicr/frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toYamlString">toYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
 
 ---
 
@@ -219,11 +220,11 @@ Instead, the process takes two deployments:
 ### Deployment 1: break the relationship
 
 - Make sure `consumerStack` no longer references `bucket.bucketName` (maybe the consumer
-   stack now uses its own bucket, or it writes to an AWS DynamoDB table, or maybe you just
-   remove the Lambda Function altogether).
+  stack now uses its own bucket, or it writes to an AWS DynamoDB table, or maybe you just
+  remove the Lambda Function altogether).
 - In the `ProducerStack` class, call `this.exportValue(this.bucket.bucketName)`. This
-   will make sure the CloudFormation Export continues to exist while the relationship
-   between the two stacks is being broken.
+  will make sure the CloudFormation Export continues to exist while the relationship
+  between the two stacks is being broken.
 - Deploy (this will effectively only change the `consumerStack`, but it's safe to deploy both).
 
 ### Deployment 2: remove the bucket resource
@@ -260,7 +261,7 @@ into the generated ARN at the location that component corresponds to.
 
 The ARN will be formatted as follows:
 
-   arn:{partition}:{service}:{region}:{account}:{resource}{sep}{resource-name}
+  arn:{partition}:{service}:{region}:{account}:{resource}{sep}{resource-name}
 
 The required ARN pieces that are omitted will be taken from the stack that
 the 'scope' is attached to. If all ARN pieces are supplied, the supplied scope
@@ -437,6 +438,20 @@ Convert an object, potentially containing tokens, to a JSON string.
 
 ---
 
+##### `toYamlString` <a name="toYamlString" id="@yicr/frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toYamlString"></a>
+
+```typescript
+public toYamlString(obj: any): string
+```
+
+Convert an object, potentially containing tokens, to a YAML string.
+
+###### `obj`<sup>Required</sup> <a name="obj" id="@yicr/frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toYamlString.parameter.obj"></a>
+
+- *Type:* any
+
+---
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -570,10 +585,10 @@ The AWS account into which this stack will be deployed.
 This value is resolved according to the following rules:
 
 1. The value provided to `env.account` when the stack is defined. This can
-    either be a concrete account (e.g. `585695031111`) or the
-    `Aws.ACCOUNT_ID` token.
+   either be a concrete account (e.g. `585695031111`) or the
+   `Aws.ACCOUNT_ID` token.
 3. `Aws.ACCOUNT_ID`, which represents the CloudFormation intrinsic reference
-    `{ "Ref": "AWS::AccountId" }` encoded as a string token.
+   `{ "Ref": "AWS::AccountId" }` encoded as a string token.
 
 Preferably, you should use the return value as an opaque string and not
 attempt to parse it to implement your logic. If you do, you must first
@@ -718,10 +733,10 @@ The AWS region into which this stack will be deployed (e.g. `us-west-2`).
 This value is resolved according to the following rules:
 
 1. The value provided to `env.region` when the stack is defined. This can
-    either be a concrete region (e.g. `us-west-2`) or the `Aws.REGION`
-    token.
+   either be a concrete region (e.g. `us-west-2`) or the `Aws.REGION`
+   token.
 3. `Aws.REGION`, which is represents the CloudFormation intrinsic reference
-    `{ "Ref": "AWS::Region" }` encoded as a string token.
+   `{ "Ref": "AWS::Region" }` encoded as a string token.
 
 Preferably, you should use the return value as an opaque string and not
 attempt to parse it to implement your logic. If you do, you must first
