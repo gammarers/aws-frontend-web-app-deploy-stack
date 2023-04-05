@@ -1,4 +1,4 @@
-# Frontend Web App Deploy Stack
+# AWS Frontend Web App Deploy Stack
 
 This is an AWS CDK Construct to make deploying a Frontend Web App (SPA) deploy to S3 behind CloudFront.
 
