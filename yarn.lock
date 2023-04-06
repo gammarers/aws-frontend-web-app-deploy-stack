@@ -1088,6 +1088,23 @@
   resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.7.tgz#8b1e39c547013941974d83ad5e9cf5042071a9a0"
   integrity sha512-sI1Ly2cODlWStkINzqGrZ8K6n+MTSbAeQnAipGyL+KZCXuHaRlj2gyyy8B/9MvsFFqN7XHryQnB2QwhzvJXovg==
 
+"@yicr/aws-secure-bucket@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@yicr/aws-secure-bucket/-/aws-secure-bucket-0.3.0.tgz#91c41e487a5429e485c052b331f636bef7c47488"
+  integrity sha512-dqIQTVZd+UyNfpM7IlPlN1QnxxZt+HQXNzasMFwBmoSff0UaX6SkgQvCi45+FAiLQGbdq4oElOaJxw12F/91+A==
+
+"@yicr/aws-secure-cloudfront-origin-bucket@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@yicr/aws-secure-cloudfront-origin-bucket/-/aws-secure-cloudfront-origin-bucket-0.5.0.tgz#4bd00328c9ea5eab88a296c132b834505027233c"
+  integrity sha512-7TeoXY76hGf3xr+HObU6EUUFWqVwUkMkEf0dNJX3e3S5/dKW1BZNePTwKVJYZlyvn5cOfvgDXKVktqPJq66R3w==
+  dependencies:
+    "@yicr/aws-secure-bucket" "^0.3.0"
+
+"@yicr/aws-secure-frontend-web-app-cloudfront-distribution@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@yicr/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-0.5.1.tgz#c428522900259b6253eeb68091c31c40aa02279e"
+  integrity sha512-urtLExBRzH2h3/SsEOaqmDfW90mVogW27/c3sXulLqPnaoasyGBUSQ1TpzAxVXVoE5S6dem1qq8fWAzxVs0vuw==
+
 "@yicr/jest-serializer-cdk-asset@^0.2.15":
   version "0.2.15"
   resolved "https://registry.yarnpkg.com/@yicr/jest-serializer-cdk-asset/-/jest-serializer-cdk-asset-0.2.15.tgz#330d9108646570e3e3821cb58dd03e5d55155d70"
@@ -1095,23 +1112,6 @@
   dependencies:
     aws-cdk-lib "^2.72.1"
     constructs "^10.1.302"
-
-"@yicr/secure-bucket@^0.2.9":
-  version "0.2.15"
-  resolved "https://registry.yarnpkg.com/@yicr/secure-bucket/-/secure-bucket-0.2.15.tgz#b70ef41acce4e97c483dd72fd32a26b8b7a5a0a1"
-  integrity sha512-buN0/egdwiRYqV5WGlhUnw2OA5m1tXYtJU+71vD5YVWx8gnulGmk9G241l3g7k0w2lPB8QVpy+ryZx1CXrw3oQ==
-
-"@yicr/secure-cloudfront-origin-bucket@^0.3.13":
-  version "0.3.13"
-  resolved "https://registry.yarnpkg.com/@yicr/secure-cloudfront-origin-bucket/-/secure-cloudfront-origin-bucket-0.3.13.tgz#c78248b48408d7fbf7a11e0f670e2474bd0412e8"
-  integrity sha512-mTWjJCRGMfOS2aFGRGRvzMrMzHcuTnuVZ0YYJ+FhaRZRh/MrLUtkOICO6LgSkcQgPQHIpTSp/wNsAfU0drBoew==
-  dependencies:
-    "@yicr/secure-bucket" "^0.2.9"
-
-"@yicr/secure-frontend-web-app-cloudfront-distribution@^0.4.14":
-  version "0.4.14"
-  resolved "https://registry.yarnpkg.com/@yicr/secure-frontend-web-app-cloudfront-distribution/-/secure-frontend-web-app-cloudfront-distribution-0.4.14.tgz#820f11f83836284f5e70bd9ce3c52bcccecb3737"
-  integrity sha512-33JHaoDPTvNFAeKZDxFc3r/s4l4C3BHgwtJSVOIOKD3anWzLLIC0d6iMeRyMbnLtR9YcCuKus78LbR3pu4yMOw==
 
 JSONStream@^1.0.4:
   version "1.3.5"

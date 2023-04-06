@@ -116,11 +116,11 @@
       "type": "override"
     },
     {
-      "name": "@yicr/secure-cloudfront-origin-bucket",
+      "name": "@yicr/aws-secure-cloudfront-origin-bucket",
       "type": "peer"
     },
     {
-      "name": "@yicr/secure-frontend-web-app-cloudfront-distribution",
+      "name": "@yicr/aws-secure-frontend-web-app-cloudfront-distribution",
       "type": "peer"
     },
     {
@@ -134,11 +134,11 @@
       "type": "peer"
     },
     {
-      "name": "@yicr/secure-cloudfront-origin-bucket",
+      "name": "@yicr/aws-secure-cloudfront-origin-bucket",
       "type": "runtime"
     },
     {
-      "name": "@yicr/secure-frontend-web-app-cloudfront-distribution",
+      "name": "@yicr/aws-secure-frontend-web-app-cloudfront-distribution",
       "type": "runtime"
     }
   ],
