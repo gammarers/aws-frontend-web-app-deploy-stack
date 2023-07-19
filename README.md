@@ -12,6 +12,12 @@ npm install @gammarer/aws-frontend-web-app-deploy-stack
 yarn add @gammarer/aws-frontend-web-app-deploy-stack
 ```
 
+### Python
+
+```shell
+pip install gammarer.aws-frontend-web-app-deploy-stack
+```
+
 ## Example
 
 ### TypeScript
