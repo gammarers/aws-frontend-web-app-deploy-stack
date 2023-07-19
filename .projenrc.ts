@@ -12,15 +12,16 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl: 'https://github.com/yicr/aws-frontend-web-app-deploy-stack.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
   deps: [
-    '@yicr/aws-secure-cloudfront-origin-bucket',
-    '@yicr/aws-secure-frontend-web-app-cloudfront-distribution',
+    '@gammarer/aws-secure-cloudfront-origin-bucket',
+    '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution',
   ],
   devDeps: [
-    '@yicr/jest-serializer-cdk-asset',
+    '@gammarer/jest-serializer-aws-cdk-asset-filename-replacer',
   ],
   peerDeps: [
-    '@yicr/aws-secure-cloudfront-origin-bucket',
-    '@yicr/aws-secure-frontend-web-app-cloudfront-distribution',
+    '@gammarer/aws-secure-cloudfront-origin-bucket',
+    '@gammarer/aws-secure-bucket',
+    '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution',
   ],
   minNodeVersion: '16.0.0',
   workflowNodeVersion: '16.19.1',
@@ -36,7 +37,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
   jestOptions: {
     jestConfig: {
-      snapshotSerializers: ['<rootDir>/node_modules/@yicr/jest-serializer-cdk-asset'],
+      snapshotSerializers: ['<rootDir>/node_modules/@gammarer/jest-serializer-aws-cdk-asset-filename-replacer'],
     },
   },
 });
