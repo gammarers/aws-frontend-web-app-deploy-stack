@@ -40,5 +40,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
       snapshotSerializers: ['<rootDir>/node_modules/@gammarer/jest-serializer-aws-cdk-asset-filename-replacer'],
     },
   },
+  publishToPypi: {
+    distName: 'gammarer.aws-frontend-web-app-deploy-stack',
+    module: 'gammarer.aws_frontend_web_app_deploy_stack',
+  },
 });
 project.synth();
