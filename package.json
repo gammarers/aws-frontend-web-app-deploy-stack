@@ -1,5 +1,5 @@
 {
-  "name": "@yicr/aws-frontend-web-app-deploy-stack",
+  "name": "@gammarer/aws-frontend-web-app-deploy-stack",
   "description": "This is an AWS CDK Construct to make deploying a Frontend Web App (SPA) deploy to S3 behind CloudFront.",
   "repository": {
     "type": "git",
