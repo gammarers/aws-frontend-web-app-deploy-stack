@@ -7,21 +7,27 @@ This is an AWS CDK Construct to make deploying a Frontend Web App (SPA) deploy t
 ### TypeScript
 
 ```shell
-npm install @yicr/aws-frontend-web-app-deploy-stack
+npm install @gammarer/aws-frontend-web-app-deploy-stack
+# or
+yarn add @gammarer/aws-frontend-web-app-deploy-stack
 ```
-or
+
+### Python
+
 ```shell
-yarn add @yicr/aws-frontend-web-app-deploy-stack
+pip install gammarer.aws-frontend-web-app-deploy-stack
 ```
 
 ## Example
 
+### TypeScript
+
 ```shell
-npm install @yicr/aws-frontend-web-app-deploy-stack
+npm install @gammarer/aws-frontend-web-app-deploy-stack
 ```
 
 ```typescript
-import { FrontendWebAppDeployStack } from '@yicr/aws-frontend-web-app-deploy-stack';
+import { FrontendWebAppDeployStack } from '@gammarer/aws-frontend-web-app-deploy-stack';
 
 new FrontendWebAppDeployStack(app, 'FrontendWebAppDeployStack', {
   env: { account: '012345678901', region: 'us-east-1' },

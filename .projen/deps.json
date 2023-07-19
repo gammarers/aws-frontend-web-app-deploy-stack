@@ -1,6 +1,14 @@
 {
   "dependencies": [
     {
+      "name": "@gammarer/aws-secure-bucket",
+      "type": "build"
+    },
+    {
+      "name": "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer",
+      "type": "build"
+    },
+    {
       "name": "@types/jest",
       "version": "^27",
       "type": "build"
@@ -18,10 +26,6 @@
     {
       "name": "@typescript-eslint/parser",
       "version": "^5",
-      "type": "build"
-    },
-    {
-      "name": "@yicr/jest-serializer-cdk-asset",
       "type": "build"
     },
     {
@@ -121,11 +125,15 @@
       "type": "override"
     },
     {
-      "name": "@yicr/aws-secure-cloudfront-origin-bucket",
+      "name": "@gammarer/aws-secure-bucket",
       "type": "peer"
     },
     {
-      "name": "@yicr/aws-secure-frontend-web-app-cloudfront-distribution",
+      "name": "@gammarer/aws-secure-cloudfront-origin-bucket",
+      "type": "peer"
+    },
+    {
+      "name": "@gammarer/aws-secure-frontend-web-app-cloudfront-distribution",
       "type": "peer"
     },
     {
@@ -139,11 +147,11 @@
       "type": "peer"
     },
     {
-      "name": "@yicr/aws-secure-cloudfront-origin-bucket",
+      "name": "@gammarer/aws-secure-cloudfront-origin-bucket",
       "type": "runtime"
     },
     {
-      "name": "@yicr/aws-secure-frontend-web-app-cloudfront-distribution",
+      "name": "@gammarer/aws-secure-frontend-web-app-cloudfront-distribution",
       "type": "runtime"
     }
   ],

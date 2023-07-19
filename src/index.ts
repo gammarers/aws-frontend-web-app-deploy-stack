@@ -1,5 +1,5 @@
-import { SecureCloudFrontOriginBucket } from '@yicr/aws-secure-cloudfront-origin-bucket';
-import { SecureFrontendWebAppCloudFrontDistribution } from '@yicr/aws-secure-frontend-web-app-cloudfront-distribution';
+import { SecureCloudFrontOriginBucket } from '@gammarer/aws-secure-cloudfront-origin-bucket';
+import { SecureFrontendWebAppCloudFrontDistribution } from '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution';
 import * as cdk from 'aws-cdk-lib';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';

@@ -7,21 +7,27 @@ This is an AWS CDK Construct to make deploying a Frontend Web App (SPA) deploy t
 ### TypeScript
 
 ```shell
-npm install @yicr/aws-frontend-web-app-deploy-stack
+npm install @gammarer/aws-frontend-web-app-deploy-stack
+# or
+yarn add @gammarer/aws-frontend-web-app-deploy-stack
 ```
-or
+
+### Python
+
 ```shell
-yarn add @yicr/aws-frontend-web-app-deploy-stack
+pip install gammarer.aws-frontend-web-app-deploy-stack
 ```
 
 ## Example
 
+### TypeScript
+
 ```shell
-npm install @yicr/aws-frontend-web-app-deploy-stack
+npm install @gammarer/aws-frontend-web-app-deploy-stack
 ```
 
 ```typescript
-import { FrontendWebAppDeployStack } from '@yicr/aws-frontend-web-app-deploy-stack';
+import { FrontendWebAppDeployStack } from '@gammarer/aws-frontend-web-app-deploy-stack';
 
 new FrontendWebAppDeployStack(app, 'FrontendWebAppDeployStack', {
   env: { account: '012345678901', region: 'us-east-1' },
@@ -41,39 +47,39 @@ This project is licensed under the Apache-2.0 License.
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### FrontendWebAppDeployStack <a name="FrontendWebAppDeployStack" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack"></a>
+### FrontendWebAppDeployStack <a name="FrontendWebAppDeployStack" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack"></a>
 
-#### Initializers <a name="Initializers" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer"></a>
+#### Initializers <a name="Initializers" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer"></a>
 
 ```typescript
-import { FrontendWebAppDeployStack } from '@yicr/aws-frontend-web-app-deploy-stack'
+import { FrontendWebAppDeployStack } from '@gammarer/aws-frontend-web-app-deploy-stack'
 
 new FrontendWebAppDeployStack(scope: Construct, id: string, props: FrontendWebAppDeployStackProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer.parameter.props">props</a></code> | <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps">FrontendWebAppDeployStackProps</a></code> | *No description.* |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer.parameter.props">props</a></code> | <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps">FrontendWebAppDeployStackProps</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps">FrontendWebAppDeployStackProps</a>
+- *Type:* <a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps">FrontendWebAppDeployStackProps</a>
 
 ---
 
@@ -81,25 +87,25 @@ new FrontendWebAppDeployStack(scope: Construct, id: string, props: FrontendWebAp
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addDependency">addDependency</a></code> | Add a dependency between this stack and another stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addMetadata">addMetadata</a></code> | Adds an arbitary key-value pair, with information you want to record about the stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addTransform">addTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportStringListValue">exportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportValue">exportValue</a></code> | Create a CloudFormation Export for a string value. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.formatArn">formatArn</a></code> | Creates an ARN from components. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.getLogicalId">getLogicalId</a></code> | Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.regionalFact">regionalFact</a></code> | Look up a fact value for the given fact for the region of this stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.renameLogicalId">renameLogicalId</a></code> | Rename a generated logical identities. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.reportMissingContextKey">reportMissingContextKey</a></code> | Indicate that a context key was expected. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.resolve">resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.splitArn">splitArn</a></code> | Splits the provided ARN into its components. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toJsonString">toJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toYamlString">toYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addDependency">addDependency</a></code> | Add a dependency between this stack and another stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addMetadata">addMetadata</a></code> | Adds an arbitary key-value pair, with information you want to record about the stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addTransform">addTransform</a></code> | Add a Transform to this stack. A Transform is a macro that AWS CloudFormation uses to process your template. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportStringListValue">exportStringListValue</a></code> | Create a CloudFormation Export for a string list value. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportValue">exportValue</a></code> | Create a CloudFormation Export for a string value. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.formatArn">formatArn</a></code> | Creates an ARN from components. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.getLogicalId">getLogicalId</a></code> | Allocates a stack-unique CloudFormation-compatible logical identity for a specific resource. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.regionalFact">regionalFact</a></code> | Look up a fact value for the given fact for the region of this stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.renameLogicalId">renameLogicalId</a></code> | Rename a generated logical identities. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.reportMissingContextKey">reportMissingContextKey</a></code> | Indicate that a context key was expected. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.resolve">resolve</a></code> | Resolve a tokenized value in the context of the current stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.splitArn">splitArn</a></code> | Splits the provided ARN into its components. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toJsonString">toJsonString</a></code> | Convert an object, potentially containing tokens, to a JSON string. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toYamlString">toYamlString</a></code> | Convert an object, potentially containing tokens, to a YAML string. |
 
 ---
 
-##### `toString` <a name="toString" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toString"></a>
+##### `toString` <a name="toString" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toString"></a>
 
 ```typescript
 public toString(): string
@@ -107,7 +113,7 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addDependency` <a name="addDependency" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addDependency"></a>
+##### `addDependency` <a name="addDependency" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addDependency"></a>
 
 ```typescript
 public addDependency(target: Stack, reason?: string): void
@@ -118,19 +124,19 @@ Add a dependency between this stack and another stack.
 This can be used to define dependencies between any two stacks within an
 app, and also supports nested stacks.
 
-###### `target`<sup>Required</sup> <a name="target" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addDependency.parameter.target"></a>
+###### `target`<sup>Required</sup> <a name="target" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addDependency.parameter.target"></a>
 
 - *Type:* aws-cdk-lib.Stack
 
 ---
 
-###### `reason`<sup>Optional</sup> <a name="reason" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addDependency.parameter.reason"></a>
+###### `reason`<sup>Optional</sup> <a name="reason" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addDependency.parameter.reason"></a>
 
 - *Type:* string
 
 ---
 
-##### `addMetadata` <a name="addMetadata" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addMetadata"></a>
+##### `addMetadata` <a name="addMetadata" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addMetadata"></a>
 
 ```typescript
 public addMetadata(key: string, value: any): void
@@ -142,19 +148,19 @@ These get translated to the Metadata section of the generated template.
 
 > [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html)
 
-###### `key`<sup>Required</sup> <a name="key" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addMetadata.parameter.key"></a>
+###### `key`<sup>Required</sup> <a name="key" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addMetadata.parameter.key"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addMetadata.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addMetadata.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `addTransform` <a name="addTransform" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addTransform"></a>
+##### `addTransform` <a name="addTransform" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addTransform"></a>
 
 ```typescript
 public addTransform(transform: string): void
@@ -175,7 +181,7 @@ stack.addTransform('AWS::Serverless-2016-10-31')
 ```
 
 
-###### `transform`<sup>Required</sup> <a name="transform" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addTransform.parameter.transform"></a>
+###### `transform`<sup>Required</sup> <a name="transform" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.addTransform.parameter.transform"></a>
 
 - *Type:* string
 
@@ -183,7 +189,7 @@ The transform to add.
 
 ---
 
-##### `exportStringListValue` <a name="exportStringListValue" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportStringListValue"></a>
+##### `exportStringListValue` <a name="exportStringListValue" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportStringListValue"></a>
 
 ```typescript
 public exportStringListValue(exportedValue: any, options?: ExportValueOptions): string[]
@@ -209,19 +215,19 @@ the resource and the manual export.
 
 See `exportValue` for an example of this process.
 
-###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportStringListValue.parameter.exportedValue"></a>
+###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportStringListValue.parameter.exportedValue"></a>
 
 - *Type:* any
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportStringListValue.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportStringListValue.parameter.options"></a>
 
 - *Type:* aws-cdk-lib.ExportValueOptions
 
 ---
 
-##### `exportValue` <a name="exportValue" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportValue"></a>
+##### `exportValue` <a name="exportValue" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportValue"></a>
 
 ```typescript
 public exportValue(exportedValue: any, options?: ExportValueOptions): string
@@ -272,19 +278,19 @@ Instead, the process takes two deployments:
 - Don't forget to remove the `exportValue()` call as well.
 - Deploy again (this time only the `producerStack` will be changed -- the bucket will be deleted).
 
-###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportValue.parameter.exportedValue"></a>
+###### `exportedValue`<sup>Required</sup> <a name="exportedValue" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportValue.parameter.exportedValue"></a>
 
 - *Type:* any
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportValue.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.exportValue.parameter.options"></a>
 
 - *Type:* aws-cdk-lib.ExportValueOptions
 
 ---
 
-##### `formatArn` <a name="formatArn" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.formatArn"></a>
+##### `formatArn` <a name="formatArn" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.formatArn"></a>
 
 ```typescript
 public formatArn(components: ArnComponents): string
@@ -306,13 +312,13 @@ The required ARN pieces that are omitted will be taken from the stack that
 the 'scope' is attached to. If all ARN pieces are supplied, the supplied scope
 can be 'undefined'.
 
-###### `components`<sup>Required</sup> <a name="components" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.formatArn.parameter.components"></a>
+###### `components`<sup>Required</sup> <a name="components" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.formatArn.parameter.components"></a>
 
 - *Type:* aws-cdk-lib.ArnComponents
 
 ---
 
-##### `getLogicalId` <a name="getLogicalId" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.getLogicalId"></a>
+##### `getLogicalId` <a name="getLogicalId" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.getLogicalId"></a>
 
 ```typescript
 public getLogicalId(element: CfnElement): string
@@ -328,7 +334,7 @@ This method uses the protected method `allocateLogicalId` to render the
 logical ID for an element. To modify the naming scheme, extend the `Stack`
 class and override this method.
 
-###### `element`<sup>Required</sup> <a name="element" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.getLogicalId.parameter.element"></a>
+###### `element`<sup>Required</sup> <a name="element" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.getLogicalId.parameter.element"></a>
 
 - *Type:* aws-cdk-lib.CfnElement
 
@@ -336,7 +342,7 @@ The CloudFormation element for which a logical identity is needed.
 
 ---
 
-##### `regionalFact` <a name="regionalFact" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.regionalFact"></a>
+##### `regionalFact` <a name="regionalFact" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.regionalFact"></a>
 
 ```typescript
 public regionalFact(factName: string, defaultValue?: string): string
@@ -360,19 +366,19 @@ not have to worry about regional facts.
 If `defaultValue` is not given, it is an error if the fact is unknown for
 the given region.
 
-###### `factName`<sup>Required</sup> <a name="factName" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.regionalFact.parameter.factName"></a>
+###### `factName`<sup>Required</sup> <a name="factName" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.regionalFact.parameter.factName"></a>
 
 - *Type:* string
 
 ---
 
-###### `defaultValue`<sup>Optional</sup> <a name="defaultValue" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.regionalFact.parameter.defaultValue"></a>
+###### `defaultValue`<sup>Optional</sup> <a name="defaultValue" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.regionalFact.parameter.defaultValue"></a>
 
 - *Type:* string
 
 ---
 
-##### `renameLogicalId` <a name="renameLogicalId" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.renameLogicalId"></a>
+##### `renameLogicalId` <a name="renameLogicalId" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.renameLogicalId"></a>
 
 ```typescript
 public renameLogicalId(oldId: string, newId: string): void
@@ -383,19 +389,19 @@ Rename a generated logical identities.
 To modify the naming scheme strategy, extend the `Stack` class and
 override the `allocateLogicalId` method.
 
-###### `oldId`<sup>Required</sup> <a name="oldId" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.renameLogicalId.parameter.oldId"></a>
+###### `oldId`<sup>Required</sup> <a name="oldId" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.renameLogicalId.parameter.oldId"></a>
 
 - *Type:* string
 
 ---
 
-###### `newId`<sup>Required</sup> <a name="newId" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.renameLogicalId.parameter.newId"></a>
+###### `newId`<sup>Required</sup> <a name="newId" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.renameLogicalId.parameter.newId"></a>
 
 - *Type:* string
 
 ---
 
-##### `reportMissingContextKey` <a name="reportMissingContextKey" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.reportMissingContextKey"></a>
+##### `reportMissingContextKey` <a name="reportMissingContextKey" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.reportMissingContextKey"></a>
 
 ```typescript
 public reportMissingContextKey(report: MissingContext): void
@@ -406,7 +412,7 @@ Indicate that a context key was expected.
 Contains instructions which will be emitted into the cloud assembly on how
 the key should be supplied.
 
-###### `report`<sup>Required</sup> <a name="report" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.reportMissingContextKey.parameter.report"></a>
+###### `report`<sup>Required</sup> <a name="report" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.reportMissingContextKey.parameter.report"></a>
 
 - *Type:* aws-cdk-lib.cloud_assembly_schema.MissingContext
 
@@ -414,7 +420,7 @@ The set of parameters needed to obtain the context.
 
 ---
 
-##### `resolve` <a name="resolve" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.resolve"></a>
+##### `resolve` <a name="resolve" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.resolve"></a>
 
 ```typescript
 public resolve(obj: any): any
@@ -422,13 +428,13 @@ public resolve(obj: any): any
 
 Resolve a tokenized value in the context of the current stack.
 
-###### `obj`<sup>Required</sup> <a name="obj" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.resolve.parameter.obj"></a>
+###### `obj`<sup>Required</sup> <a name="obj" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.resolve.parameter.obj"></a>
 
 - *Type:* any
 
 ---
 
-##### `splitArn` <a name="splitArn" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.splitArn"></a>
+##### `splitArn` <a name="splitArn" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.splitArn"></a>
 
 ```typescript
 public splitArn(arn: string, arnFormat: ArnFormat): ArnComponents
@@ -441,7 +447,7 @@ and a Token representing a dynamic CloudFormation expression
 (in which case the returned components will also be dynamic CloudFormation expressions,
 encoded as Tokens).
 
-###### `arn`<sup>Required</sup> <a name="arn" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.splitArn.parameter.arn"></a>
+###### `arn`<sup>Required</sup> <a name="arn" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.splitArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -449,7 +455,7 @@ the ARN to split into its components.
 
 ---
 
-###### `arnFormat`<sup>Required</sup> <a name="arnFormat" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.splitArn.parameter.arnFormat"></a>
+###### `arnFormat`<sup>Required</sup> <a name="arnFormat" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.splitArn.parameter.arnFormat"></a>
 
 - *Type:* aws-cdk-lib.ArnFormat
 
@@ -457,7 +463,7 @@ the expected format of 'arn' - depends on what format the service 'arn' represen
 
 ---
 
-##### `toJsonString` <a name="toJsonString" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toJsonString"></a>
+##### `toJsonString` <a name="toJsonString" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toJsonString"></a>
 
 ```typescript
 public toJsonString(obj: any, space?: number): string
@@ -465,19 +471,19 @@ public toJsonString(obj: any, space?: number): string
 
 Convert an object, potentially containing tokens, to a JSON string.
 
-###### `obj`<sup>Required</sup> <a name="obj" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toJsonString.parameter.obj"></a>
+###### `obj`<sup>Required</sup> <a name="obj" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toJsonString.parameter.obj"></a>
 
 - *Type:* any
 
 ---
 
-###### `space`<sup>Optional</sup> <a name="space" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toJsonString.parameter.space"></a>
+###### `space`<sup>Optional</sup> <a name="space" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toJsonString.parameter.space"></a>
 
 - *Type:* number
 
 ---
 
-##### `toYamlString` <a name="toYamlString" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toYamlString"></a>
+##### `toYamlString` <a name="toYamlString" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toYamlString"></a>
 
 ```typescript
 public toYamlString(obj: any): string
@@ -485,7 +491,7 @@ public toYamlString(obj: any): string
 
 Convert an object, potentially containing tokens, to a YAML string.
 
-###### `obj`<sup>Required</sup> <a name="obj" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toYamlString.parameter.obj"></a>
+###### `obj`<sup>Required</sup> <a name="obj" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.toYamlString.parameter.obj"></a>
 
 - *Type:* any
 
@@ -495,16 +501,16 @@ Convert an object, potentially containing tokens, to a YAML string.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isStack">isStack</a></code> | Return whether the given object is a Stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.of">of</a></code> | Looks up the first stack scope in which `construct` is defined. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isStack">isStack</a></code> | Return whether the given object is a Stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.of">of</a></code> | Looks up the first stack scope in which `construct` is defined. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isConstruct"></a>
 
 ```typescript
-import { FrontendWebAppDeployStack } from '@yicr/aws-frontend-web-app-deploy-stack'
+import { FrontendWebAppDeployStack } from '@gammarer/aws-frontend-web-app-deploy-stack'
 
 FrontendWebAppDeployStack.isConstruct(x: any)
 ```
@@ -525,7 +531,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -533,10 +539,10 @@ Any object.
 
 ---
 
-##### `isStack` <a name="isStack" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isStack"></a>
+##### `isStack` <a name="isStack" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isStack"></a>
 
 ```typescript
-import { FrontendWebAppDeployStack } from '@yicr/aws-frontend-web-app-deploy-stack'
+import { FrontendWebAppDeployStack } from '@gammarer/aws-frontend-web-app-deploy-stack'
 
 FrontendWebAppDeployStack.isStack(x: any)
 ```
@@ -545,16 +551,16 @@ Return whether the given object is a Stack.
 
 We do attribute detection since we can't reliably use 'instanceof'.
 
-###### `x`<sup>Required</sup> <a name="x" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isStack.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isStack.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `of` <a name="of" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.of"></a>
+##### `of` <a name="of" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.of"></a>
 
 ```typescript
-import { FrontendWebAppDeployStack } from '@yicr/aws-frontend-web-app-deploy-stack'
+import { FrontendWebAppDeployStack } from '@gammarer/aws-frontend-web-app-deploy-stack'
 
 FrontendWebAppDeployStack.of(construct: IConstruct)
 ```
@@ -563,7 +569,7 @@ Looks up the first stack scope in which `construct` is defined.
 
 Fails if there is no stack up the tree.
 
-###### `construct`<sup>Required</sup> <a name="construct" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.of.parameter.construct"></a>
+###### `construct`<sup>Required</sup> <a name="construct" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.of.parameter.construct"></a>
 
 - *Type:* constructs.IConstruct
 
@@ -575,31 +581,31 @@ The construct to start the search from.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.account">account</a></code> | <code>string</code> | The AWS account into which this stack will be deployed. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.artifactId">artifactId</a></code> | <code>string</code> | The ID of the cloud assembly artifact for this stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.bundlingRequired">bundlingRequired</a></code> | <code>boolean</code> | Indicates whether the stack requires bundling or not. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.dependencies">dependencies</a></code> | <code>aws-cdk-lib.Stack[]</code> | Return the stacks this stack depends on. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.environment">environment</a></code> | <code>string</code> | The environment coordinates in which this stack is deployed. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.nested">nested</a></code> | <code>boolean</code> | Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | Returns the list of notification Amazon Resource Names (ARNs) for the current stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.partition">partition</a></code> | <code>string</code> | The partition in which this stack is defined. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.region">region</a></code> | <code>string</code> | The AWS region into which this stack will be deployed (e.g. `us-west-2`). |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.stackId">stackId</a></code> | <code>string</code> | The ID of the stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.stackName">stackName</a></code> | <code>string</code> | The concrete CloudFormation physical stack name. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method for this stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.tags">tags</a></code> | <code>aws-cdk-lib.TagManager</code> | Tags to be applied to the stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.templateFile">templateFile</a></code> | <code>string</code> | The name of the CloudFormation template file emitted to the output directory during synthesis. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.templateOptions">templateOptions</a></code> | <code>aws-cdk-lib.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.urlSuffix">urlSuffix</a></code> | <code>string</code> | The Amazon domain suffix for the region in which this stack is defined. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.nestedStackParent">nestedStackParent</a></code> | <code>aws-cdk-lib.Stack</code> | If this is a nested stack, returns it's parent stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.nestedStackResource">nestedStackResource</a></code> | <code>aws-cdk-lib.CfnResource</code> | If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether termination protection is enabled for this stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.account">account</a></code> | <code>string</code> | The AWS account into which this stack will be deployed. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.artifactId">artifactId</a></code> | <code>string</code> | The ID of the cloud assembly artifact for this stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.bundlingRequired">bundlingRequired</a></code> | <code>boolean</code> | Indicates whether the stack requires bundling or not. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.dependencies">dependencies</a></code> | <code>aws-cdk-lib.Stack[]</code> | Return the stacks this stack depends on. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.environment">environment</a></code> | <code>string</code> | The environment coordinates in which this stack is deployed. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.nested">nested</a></code> | <code>boolean</code> | Indicates if this is a nested stack, in which case `parentStack` will include a reference to it's parent. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.notificationArns">notificationArns</a></code> | <code>string[]</code> | Returns the list of notification Amazon Resource Names (ARNs) for the current stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.partition">partition</a></code> | <code>string</code> | The partition in which this stack is defined. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.region">region</a></code> | <code>string</code> | The AWS region into which this stack will be deployed (e.g. `us-west-2`). |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.stackId">stackId</a></code> | <code>string</code> | The ID of the stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.stackName">stackName</a></code> | <code>string</code> | The concrete CloudFormation physical stack name. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method for this stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.tags">tags</a></code> | <code>aws-cdk-lib.TagManager</code> | Tags to be applied to the stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.templateFile">templateFile</a></code> | <code>string</code> | The name of the CloudFormation template file emitted to the output directory during synthesis. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.templateOptions">templateOptions</a></code> | <code>aws-cdk-lib.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.urlSuffix">urlSuffix</a></code> | <code>string</code> | The Amazon domain suffix for the region in which this stack is defined. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.nestedStackParent">nestedStackParent</a></code> | <code>aws-cdk-lib.Stack</code> | If this is a nested stack, returns it's parent stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.nestedStackResource">nestedStackResource</a></code> | <code>aws-cdk-lib.CfnResource</code> | If this is a nested stack, this represents its `AWS::CloudFormation::Stack` resource. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether termination protection is enabled for this stack. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -611,7 +617,7 @@ The tree node.
 
 ---
 
-##### `account`<sup>Required</sup> <a name="account" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.account"></a>
+##### `account`<sup>Required</sup> <a name="account" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.account"></a>
 
 ```typescript
 public readonly account: string;
@@ -640,7 +646,7 @@ implement some other region-agnostic behavior.
 
 ---
 
-##### `artifactId`<sup>Required</sup> <a name="artifactId" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.artifactId"></a>
+##### `artifactId`<sup>Required</sup> <a name="artifactId" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.artifactId"></a>
 
 ```typescript
 public readonly artifactId: string;
@@ -652,7 +658,7 @@ The ID of the cloud assembly artifact for this stack.
 
 ---
 
-##### `availabilityZones`<sup>Required</sup> <a name="availabilityZones" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.availabilityZones"></a>
+##### `availabilityZones`<sup>Required</sup> <a name="availabilityZones" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.availabilityZones"></a>
 
 ```typescript
 public readonly availabilityZones: string[];
@@ -675,7 +681,7 @@ To specify a different strategy for selecting availability zones override this m
 
 ---
 
-##### `bundlingRequired`<sup>Required</sup> <a name="bundlingRequired" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.bundlingRequired"></a>
+##### `bundlingRequired`<sup>Required</sup> <a name="bundlingRequired" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.bundlingRequired"></a>
 
 ```typescript
 public readonly bundlingRequired: boolean;
@@ -687,7 +693,7 @@ Indicates whether the stack requires bundling or not.
 
 ---
 
-##### `dependencies`<sup>Required</sup> <a name="dependencies" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.dependencies"></a>
+##### `dependencies`<sup>Required</sup> <a name="dependencies" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.dependencies"></a>
 
 ```typescript
 public readonly dependencies: Stack[];
@@ -699,7 +705,7 @@ Return the stacks this stack depends on.
 
 ---
 
-##### `environment`<sup>Required</sup> <a name="environment" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.environment"></a>
+##### `environment`<sup>Required</sup> <a name="environment" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.environment"></a>
 
 ```typescript
 public readonly environment: string;
@@ -723,7 +729,7 @@ region/account-agnostic.
 
 ---
 
-##### `nested`<sup>Required</sup> <a name="nested" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.nested"></a>
+##### `nested`<sup>Required</sup> <a name="nested" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.nested"></a>
 
 ```typescript
 public readonly nested: boolean;
@@ -735,7 +741,7 @@ Indicates if this is a nested stack, in which case `parentStack` will include a 
 
 ---
 
-##### `notificationArns`<sup>Required</sup> <a name="notificationArns" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.notificationArns"></a>
+##### `notificationArns`<sup>Required</sup> <a name="notificationArns" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.notificationArns"></a>
 
 ```typescript
 public readonly notificationArns: string[];
@@ -747,7 +753,7 @@ Returns the list of notification Amazon Resource Names (ARNs) for the current st
 
 ---
 
-##### `partition`<sup>Required</sup> <a name="partition" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.partition"></a>
+##### `partition`<sup>Required</sup> <a name="partition" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.partition"></a>
 
 ```typescript
 public readonly partition: string;
@@ -759,7 +765,7 @@ The partition in which this stack is defined.
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -788,7 +794,7 @@ implement some other region-agnostic behavior.
 
 ---
 
-##### `stackId`<sup>Required</sup> <a name="stackId" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.stackId"></a>
+##### `stackId`<sup>Required</sup> <a name="stackId" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.stackId"></a>
 
 ```typescript
 public readonly stackId: string;
@@ -808,7 +814,7 @@ The ID of the stack.
 ```
 
 
-##### `stackName`<sup>Required</sup> <a name="stackName" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.stackName"></a>
+##### `stackName`<sup>Required</sup> <a name="stackName" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.stackName"></a>
 
 ```typescript
 public readonly stackName: string;
@@ -829,7 +835,7 @@ you can use `Aws.STACK_NAME` directly.
 
 ---
 
-##### `synthesizer`<sup>Required</sup> <a name="synthesizer" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.synthesizer"></a>
+##### `synthesizer`<sup>Required</sup> <a name="synthesizer" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.synthesizer"></a>
 
 ```typescript
 public readonly synthesizer: IStackSynthesizer;
@@ -841,7 +847,7 @@ Synthesis method for this stack.
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.tags"></a>
 
 ```typescript
 public readonly tags: TagManager;
@@ -853,7 +859,7 @@ Tags to be applied to the stack.
 
 ---
 
-##### `templateFile`<sup>Required</sup> <a name="templateFile" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.templateFile"></a>
+##### `templateFile`<sup>Required</sup> <a name="templateFile" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.templateFile"></a>
 
 ```typescript
 public readonly templateFile: string;
@@ -867,7 +873,7 @@ Example value: `MyStack.template.json`
 
 ---
 
-##### `templateOptions`<sup>Required</sup> <a name="templateOptions" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.templateOptions"></a>
+##### `templateOptions`<sup>Required</sup> <a name="templateOptions" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.templateOptions"></a>
 
 ```typescript
 public readonly templateOptions: ITemplateOptions;
@@ -879,7 +885,7 @@ Options for CloudFormation template (like version, transform, description).
 
 ---
 
-##### `urlSuffix`<sup>Required</sup> <a name="urlSuffix" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.urlSuffix"></a>
+##### `urlSuffix`<sup>Required</sup> <a name="urlSuffix" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.urlSuffix"></a>
 
 ```typescript
 public readonly urlSuffix: string;
@@ -891,7 +897,7 @@ The Amazon domain suffix for the region in which this stack is defined.
 
 ---
 
-##### `nestedStackParent`<sup>Optional</sup> <a name="nestedStackParent" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.nestedStackParent"></a>
+##### `nestedStackParent`<sup>Optional</sup> <a name="nestedStackParent" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.nestedStackParent"></a>
 
 ```typescript
 public readonly nestedStackParent: Stack;
@@ -903,7 +909,7 @@ If this is a nested stack, returns it's parent stack.
 
 ---
 
-##### `nestedStackResource`<sup>Optional</sup> <a name="nestedStackResource" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.nestedStackResource"></a>
+##### `nestedStackResource`<sup>Optional</sup> <a name="nestedStackResource" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.nestedStackResource"></a>
 
 ```typescript
 public readonly nestedStackResource: CfnResource;
@@ -917,7 +923,7 @@ If this is a nested stack, this represents its `AWS::CloudFormation::Stack` reso
 
 ---
 
-##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.terminationProtection"></a>
+##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.property.terminationProtection"></a>
 
 ```typescript
 public readonly terminationProtection: boolean;
@@ -932,12 +938,12 @@ Whether termination protection is enabled for this stack.
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### FrontendWebAppDeployStackProps <a name="FrontendWebAppDeployStackProps" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps"></a>
+### FrontendWebAppDeployStackProps <a name="FrontendWebAppDeployStackProps" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps"></a>
 
-#### Initializer <a name="Initializer" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.Initializer"></a>
 
 ```typescript
-import { FrontendWebAppDeployStackProps } from '@yicr/aws-frontend-web-app-deploy-stack'
+import { FrontendWebAppDeployStackProps } from '@gammarer/aws-frontend-web-app-deploy-stack'
 
 const frontendWebAppDeployStackProps: FrontendWebAppDeployStackProps = { ... }
 ```
@@ -946,25 +952,25 @@ const frontendWebAppDeployStackProps: FrontendWebAppDeployStackProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.deploySourceAssetPath">deploySourceAssetPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.domainName">domainName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.hostedZoneId">hostedZoneId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.logBucketArn">logBucketArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.originBucketName">originBucketName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.crossRegionReferences">crossRegionReferences</a></code> | <code>boolean</code> | Enable this flag to allow native cross region stack references. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.deploySourceAssetPath">deploySourceAssetPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.domainName">domainName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.hostedZoneId">hostedZoneId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.logBucketArn">logBucketArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.originBucketName">originBucketName</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.analyticsReporting"></a>
+##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.analyticsReporting"></a>
 
 ```typescript
 public readonly analyticsReporting: boolean;
@@ -977,7 +983,7 @@ Include runtime versioning information in this Stack.
 
 ---
 
-##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.crossRegionReferences"></a>
+##### `crossRegionReferences`<sup>Optional</sup> <a name="crossRegionReferences" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.crossRegionReferences"></a>
 
 ```typescript
 public readonly crossRegionReferences: boolean;
@@ -995,7 +1001,7 @@ This feature is currently experimental
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -1008,7 +1014,7 @@ A description of the stack.
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.env"></a>
 
 ```typescript
 public readonly env: Environment;
@@ -1082,7 +1088,7 @@ new MyStack(app, 'Stack1');
 ```
 
 
-##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.permissionsBoundary"></a>
+##### `permissionsBoundary`<sup>Optional</sup> <a name="permissionsBoundary" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.permissionsBoundary"></a>
 
 ```typescript
 public readonly permissionsBoundary: PermissionsBoundary;
@@ -1095,7 +1101,7 @@ Options for applying a permissions boundary to all IAM Roles and Users created w
 
 ---
 
-##### `stackName`<sup>Optional</sup> <a name="stackName" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.stackName"></a>
+##### `stackName`<sup>Optional</sup> <a name="stackName" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.stackName"></a>
 
 ```typescript
 public readonly stackName: string;
@@ -1108,7 +1114,7 @@ Name to deploy the stack with.
 
 ---
 
-##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.suppressTemplateIndentation"></a>
+##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.suppressTemplateIndentation"></a>
 
 ```typescript
 public readonly suppressTemplateIndentation: boolean;
@@ -1125,7 +1131,7 @@ default value `false` will be used.
 
 ---
 
-##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.synthesizer"></a>
+##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.synthesizer"></a>
 
 ```typescript
 public readonly synthesizer: IStackSynthesizer;
@@ -1148,7 +1154,7 @@ other synthesizer is specified.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -1161,7 +1167,7 @@ Stack tags that will be applied to all the taggable resources and the stack itse
 
 ---
 
-##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.terminationProtection"></a>
+##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.terminationProtection"></a>
 
 ```typescript
 public readonly terminationProtection: boolean;
@@ -1174,7 +1180,7 @@ Whether to enable termination protection for this stack.
 
 ---
 
-##### `deploySourceAssetPath`<sup>Required</sup> <a name="deploySourceAssetPath" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.deploySourceAssetPath"></a>
+##### `deploySourceAssetPath`<sup>Required</sup> <a name="deploySourceAssetPath" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.deploySourceAssetPath"></a>
 
 ```typescript
 public readonly deploySourceAssetPath: string;
@@ -1184,7 +1190,7 @@ public readonly deploySourceAssetPath: string;
 
 ---
 
-##### `domainName`<sup>Required</sup> <a name="domainName" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.domainName"></a>
+##### `domainName`<sup>Required</sup> <a name="domainName" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.domainName"></a>
 
 ```typescript
 public readonly domainName: string;
@@ -1194,7 +1200,7 @@ public readonly domainName: string;
 
 ---
 
-##### `hostedZoneId`<sup>Required</sup> <a name="hostedZoneId" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.hostedZoneId"></a>
+##### `hostedZoneId`<sup>Required</sup> <a name="hostedZoneId" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.hostedZoneId"></a>
 
 ```typescript
 public readonly hostedZoneId: string;
@@ -1204,7 +1210,7 @@ public readonly hostedZoneId: string;
 
 ---
 
-##### `logBucketArn`<sup>Required</sup> <a name="logBucketArn" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.logBucketArn"></a>
+##### `logBucketArn`<sup>Required</sup> <a name="logBucketArn" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.logBucketArn"></a>
 
 ```typescript
 public readonly logBucketArn: string;
@@ -1214,7 +1220,7 @@ public readonly logBucketArn: string;
 
 ---
 
-##### `originBucketName`<sup>Required</sup> <a name="originBucketName" id="@yicr/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.originBucketName"></a>
+##### `originBucketName`<sup>Required</sup> <a name="originBucketName" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.originBucketName"></a>
 
 ```typescript
 public readonly originBucketName: string;
