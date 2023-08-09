@@ -129,14 +129,6 @@
       "type": "peer"
     },
     {
-      "name": "@gammarer/aws-secure-cloudfront-origin-bucket",
-      "type": "peer"
-    },
-    {
-      "name": "@gammarer/aws-secure-frontend-web-app-cloudfront-distribution",
-      "type": "peer"
-    },
-    {
       "name": "aws-cdk-lib",
       "version": "^2.62.0",
       "type": "peer"
@@ -148,10 +140,12 @@
     },
     {
       "name": "@gammarer/aws-secure-cloudfront-origin-bucket",
+      "version": "^0.7.1",
       "type": "runtime"
     },
     {
       "name": "@gammarer/aws-secure-frontend-web-app-cloudfront-distribution",
+      "version": "^0.7.8",
       "type": "runtime"
     }
   ],

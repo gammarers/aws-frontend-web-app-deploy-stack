@@ -12,16 +12,14 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl: 'https://github.com/yicr/aws-frontend-web-app-deploy-stack.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
   deps: [
-    '@gammarer/aws-secure-cloudfront-origin-bucket',
-    '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution',
+    '@gammarer/aws-secure-cloudfront-origin-bucket@^0.7.1',
+    '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution@^0.7.8',
   ],
   devDeps: [
     '@gammarer/jest-serializer-aws-cdk-asset-filename-replacer',
   ],
   peerDeps: [
-    '@gammarer/aws-secure-cloudfront-origin-bucket',
     '@gammarer/aws-secure-bucket',
-    '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution',
   ],
   minNodeVersion: '16.0.0',
   workflowNodeVersion: '16.19.1',
