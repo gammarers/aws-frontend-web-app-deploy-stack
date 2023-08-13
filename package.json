@@ -36,8 +36,8 @@
     "organization": false
   },
   "devDependencies": {
-    "@gammarer/aws-secure-bucket": "0.11.9",
-    "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer": "^0.3.25",
+    "@gammarer/aws-secure-bucket": "0.11.10",
+    "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer": "^0.3.26",
     "@types/jest": "^27",
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^5",
@@ -56,7 +56,7 @@
     "jsii-pacmak": "^1.87.0",
     "jsii-rosetta": "1.x",
     "npm-check-updates": "^16",
-    "projen": "^0.72.10",
+    "projen": "^0.72.11",
     "standard-version": "^9",
     "ts-jest": "^27",
     "ts-node": "^10.9.1",
