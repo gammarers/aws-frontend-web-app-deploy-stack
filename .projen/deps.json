@@ -2,6 +2,7 @@
   "dependencies": [
     {
       "name": "@gammarer/aws-secure-bucket",
+      "version": "0.11.3",
       "type": "build"
     },
     {
@@ -10,12 +11,11 @@
     },
     {
       "name": "@types/jest",
-      "version": "^27",
       "type": "build"
     },
     {
       "name": "@types/node",
-      "version": "^16",
+      "version": "^18",
       "type": "build"
     },
     {
@@ -56,13 +56,12 @@
       "type": "build"
     },
     {
-      "name": "jest-junit",
-      "version": "^15",
+      "name": "jest",
       "type": "build"
     },
     {
-      "name": "jest",
-      "version": "^27",
+      "name": "jest-junit",
+      "version": "^15",
       "type": "build"
     },
     {
@@ -79,12 +78,12 @@
     },
     {
       "name": "jsii-rosetta",
-      "version": "1.x",
+      "version": "5.1.x",
       "type": "build"
     },
     {
       "name": "jsii",
-      "version": "1.x",
+      "version": "5.1.x",
       "type": "build"
     },
     {
@@ -103,7 +102,6 @@
     },
     {
       "name": "ts-jest",
-      "version": "^27",
       "type": "build"
     },
     {
@@ -112,20 +110,12 @@
     },
     {
       "name": "typescript",
+      "version": "5.1.x",
       "type": "build"
     },
     {
-      "name": "@types/babel__traverse",
-      "version": "7.18.2",
-      "type": "override"
-    },
-    {
-      "name": "@types/prettier",
-      "version": "2.6.0",
-      "type": "override"
-    },
-    {
       "name": "@gammarer/aws-secure-bucket",
+      "version": "^0.11.3",
       "type": "peer"
     },
     {
@@ -140,12 +130,12 @@
     },
     {
       "name": "@gammarer/aws-secure-cloudfront-origin-bucket",
-      "version": "^0.7.1",
+      "version": "^0.8.1",
       "type": "runtime"
     },
     {
       "name": "@gammarer/aws-secure-frontend-web-app-cloudfront-distribution",
-      "version": "^0.7.8",
+      "version": "^0.8.1",
       "type": "runtime"
     }
   ],
