@@ -21,7 +21,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '@gammarer/jest-serializer-aws-cdk-asset-filename-replacer',
   ],
   peerDeps: [
-    '@gammarer/aws-secure-bucket@^0.11.3',
+    '@gammarer/aws-secure-cloudfront-origin-bucket',
+    '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution',
+    '@gammarer/aws-secure-bucket',
   ],
   minNodeVersion: '18.0.0',
   workflowNodeVersion: '18.17.1',

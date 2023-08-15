@@ -289,13 +289,13 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --upgrade --target=minor --filter=@gammarer/jest-serializer-aws-cdk-asset-filename-replacer,@types/jest,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint,jest,jest-junit,jsii-diff,jsii-docgen,jsii-pacmak,npm-check-updates,projen,standard-version,ts-jest,ts-node,@gammarer/aws-secure-bucket,aws-cdk-lib,constructs,@gammarer/aws-secure-cloudfront-origin-bucket,@gammarer/aws-secure-frontend-web-app-cloudfront-distribution"
+          "exec": "npm-check-updates --upgrade --target=minor --filter=@gammarer/aws-secure-bucket,@gammarer/jest-serializer-aws-cdk-asset-filename-replacer,@types/jest,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint,jest,jest-junit,jsii-diff,jsii-docgen,jsii-pacmak,npm-check-updates,projen,standard-version,ts-jest,ts-node,@gammarer/aws-secure-cloudfront-origin-bucket,@gammarer/aws-secure-frontend-web-app-cloudfront-distribution,aws-cdk-lib,constructs"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @gammarer/jest-serializer-aws-cdk-asset-filename-replacer @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit jsii-diff jsii-docgen jsii-pacmak npm-check-updates projen standard-version ts-jest ts-node @gammarer/aws-secure-bucket aws-cdk-lib constructs @gammarer/aws-secure-cloudfront-origin-bucket @gammarer/aws-secure-frontend-web-app-cloudfront-distribution"
+          "exec": "yarn upgrade @gammarer/aws-secure-bucket @gammarer/jest-serializer-aws-cdk-asset-filename-replacer @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit jsii-diff jsii-docgen jsii-pacmak npm-check-updates projen standard-version ts-jest ts-node @gammarer/aws-secure-cloudfront-origin-bucket @gammarer/aws-secure-frontend-web-app-cloudfront-distribution aws-cdk-lib constructs"
         },
         {
           "exec": "npx projen"
