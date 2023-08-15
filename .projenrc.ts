@@ -44,5 +44,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
     distName: 'gammarer.aws-frontend-web-app-deploy-stack',
     module: 'gammarer.aws_frontend_web_app_deploy_stack',
   },
+  publishToMaven: {
+    mavenGroupId: 'com.gammarer',
+    javaPackage: 'com.gammarer.cdk.aws.frontend_web_app_deploy_stack',
+    mavenArtifactId: 'aws-frontend-web-app-deploy-stack',
+    mavenEndpoint: 'https://s01.oss.sonatype.org',
+  },
 });
 project.synth();
