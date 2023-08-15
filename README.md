@@ -18,13 +18,18 @@ yarn add @gammarer/aws-frontend-web-app-deploy-stack
 pip install gammarer.aws-frontend-web-app-deploy-stack
 ```
 
-## Example
+### Java
 
-### TypeScript
+Add the following to pom.xml:
 
-```shell
-npm install @gammarer/aws-frontend-web-app-deploy-stack
+```xml
+<dependency>
+  <groupId>com.gammarer</groupId>
+  <artifactId>aws-frontend-web-app-deploy-stack</artifactId>
+</dependency>
 ```
+
+## Example
 
 ```typescript
 import { FrontendWebAppDeployStack } from '@gammarer/aws-frontend-web-app-deploy-stack';
