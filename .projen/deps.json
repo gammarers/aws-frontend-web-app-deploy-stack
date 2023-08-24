@@ -6,6 +6,7 @@
     },
     {
       "name": "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer",
+      "version": "0.3.x",
       "type": "build"
     },
     {
@@ -136,12 +137,12 @@
     },
     {
       "name": "@gammarer/aws-secure-cloudfront-origin-bucket",
-      "version": "^0.8.1",
+      "version": "0.9.x",
       "type": "runtime"
     },
     {
       "name": "@gammarer/aws-secure-frontend-web-app-cloudfront-distribution",
-      "version": "^0.8.1",
+      "version": "0.8.x",
       "type": "runtime"
     }
   ],

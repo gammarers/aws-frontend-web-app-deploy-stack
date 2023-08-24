@@ -364,27 +364,27 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.47.0.tgz#5478fdf443ff8158f9de171c704ae45308696c7d"
   integrity sha512-P6omY1zv5MItm93kLM8s2vr1HICJH8v0dvddDhysbIuZ+vcjOHg5Zbkf1mTkcmi2JA9oBG2anOkRnW8WJTS8Og==
 
-"@gammarer/aws-secure-bucket@0.11.18", "@gammarer/aws-secure-bucket@^0.11.3":
-  version "0.11.18"
-  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-bucket/-/aws-secure-bucket-0.11.18.tgz#65856a197d697e43bb34afed22483dc1a2f384e0"
-  integrity sha512-thYbPd0UtT2e3CmpeWiU1B0ex80gcSBsZ/nW8BvO7k2PIeVzdnZ/EQqudeaz71fkWjkgKnloVJeN4KopJdyBwQ==
+"@gammarer/aws-secure-bucket@0.12.*", "@gammarer/aws-secure-bucket@0.12.1":
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-bucket/-/aws-secure-bucket-0.12.1.tgz#5a0dda201f2d2949256abfb45f0603a359951c12"
+  integrity sha512-gTy38l4GeOJ1Fwl9P9FJMrAtQvFM7NwxkXHQz29xP8oC6p2sR9ypyXv9mybwhlaPU9svGxbIeAVuu/XkE6u2kA==
 
-"@gammarer/aws-secure-cloudfront-origin-bucket@^0.8.1":
-  version "0.8.13"
-  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-cloudfront-origin-bucket/-/aws-secure-cloudfront-origin-bucket-0.8.13.tgz#286b27207c1c2a7abb7411182c3154be9664dba2"
-  integrity sha512-40ysF3cbNTttd5r62HQCqQxGOJVN7HN5z1DNrulKAsdusdddr5OKWlLRSSgxBrDM8AlkVECzfywWo6uWRBsVgg==
+"@gammarer/aws-secure-cloudfront-origin-bucket@0.9.x":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-cloudfront-origin-bucket/-/aws-secure-cloudfront-origin-bucket-0.9.0.tgz#3b205bf71fe9c17a31d7ddd25ea923dd43f14ef0"
+  integrity sha512-knauBELjg5UiZqK6kWf+ivheksxntyvj12VqaXe3rnuMWlSGwJjY/wRlx46HIwvLzAfb9g62lu0z7/IoqNuiwg==
   dependencies:
-    "@gammarer/aws-secure-bucket" "^0.11.3"
+    "@gammarer/aws-secure-bucket" "0.12.*"
 
-"@gammarer/aws-secure-frontend-web-app-cloudfront-distribution@^0.8.1":
-  version "0.8.9"
-  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-0.8.9.tgz#6b47a1b6580570fde3021c0d061790ba1b9ab54e"
-  integrity sha512-72onqgRQ7shZ6u+8WnH8QbsxIJGIibtAA6PzGaQ1lLAKa8I4xPRApxe9VuDHQqROZ8iJGrxeKo0EvczUE2mwsA==
+"@gammarer/aws-secure-frontend-web-app-cloudfront-distribution@0.8.x":
+  version "0.8.10"
+  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-0.8.10.tgz#954772a779c28e5a830eb952f85821732103e8ed"
+  integrity sha512-qALCFLHgI5BfRofVZu2qHICcKbE9JGT+yn3ODqL/iHlcaCGirIy3tUoc4avFDqgDbsHYaMCdGy/zr5XOKgamMA==
 
-"@gammarer/jest-serializer-aws-cdk-asset-filename-replacer@^0.3.35":
-  version "0.3.35"
-  resolved "https://registry.yarnpkg.com/@gammarer/jest-serializer-aws-cdk-asset-filename-replacer/-/jest-serializer-aws-cdk-asset-filename-replacer-0.3.35.tgz#1bc0e61a33ab279d78767ee34cbb6af107c0b0af"
-  integrity sha512-ddL5rUYiPleKk3UCZe00Q4Zy+YRLF3bsob/voYIVWefZ+LW5ywyn7UMen73F8t3sEQzaEah3zdFKL5gQUlVgLg==
+"@gammarer/jest-serializer-aws-cdk-asset-filename-replacer@0.3.x":
+  version "0.3.36"
+  resolved "https://registry.yarnpkg.com/@gammarer/jest-serializer-aws-cdk-asset-filename-replacer/-/jest-serializer-aws-cdk-asset-filename-replacer-0.3.36.tgz#1b340ec328902bc32eabf77803b184ce5b3187b4"
+  integrity sha512-7XTOB1ND7OfEwXupp/qrajZzZ44rqExJqERnADBbOtwb+M54IAGPFhD/GekXO5ruU2RujaRFbmVOfhffyw3iEA==
   dependencies:
     aws-cdk-lib "^2.92.0"
     constructs "^10.2.69"
@@ -997,14 +997,14 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*":
-  version "20.5.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.3.tgz#fa52c147f405d56b2f1dd8780d840aa87ddff629"
-  integrity sha512-ITI7rbWczR8a/S6qjAW7DMqxqFMjjTo61qZVWJ1ubPvbIQsL5D/TvwjYEalM8Kthpe3hTzOGrF2TGbAu2uyqeA==
+  version "20.5.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.4.tgz#4666fb40f9974d60c53c4ff554315860ba4feab8"
+  integrity sha512-Y9vbIAoM31djQZrPYjpTLo0XlaSwOIsrlfE3LpulZeRblttsLQRFRlBAppW0LOxyT3ALj2M5vU1ucQQayQH3jA==
 
 "@types/node@^18":
-  version "18.17.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.8.tgz#fd69eb04c25d50374245e8bd69ba29dd0eb7ff5e"
-  integrity sha512-Av/7MqX/iNKwT9Tr60V85NqMnsmh8ilfJoBlIVibkXfitk9Q22D9Y5mSpm+FvG5DET7EbVfB40bOiLzKgYFgPw==
+  version "18.17.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.9.tgz#b219fa0da3c574399f4a44455ea4b388029afd56"
+  integrity sha512-fxaKquqYcPOGwE7tC1anJaPJ0GHyOVzfA2oUoXECjBjrtsIz4YJvtNYsq8LUcjEUehEF+jGpx8Z+lFrtT6z0tg==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -1428,9 +1428,9 @@ aws-cdk-lib@2.80.0:
     yaml "1.10.2"
 
 aws-cdk-lib@^2.92.0:
-  version "2.92.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.92.0.tgz#6f036e8fb73dc7196aac71e4b22658d8226b8ce5"
-  integrity sha512-J+SUFSnOt9u2GbY5QIABgjGNiw8bL/v0S3zsPhhO1dVwK+G7oE+bhLcAi3iILrw2sIpirNWH9K3W0by9K+cyMw==
+  version "2.93.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.93.0.tgz#545bc0072bc0f2e27cb0fecb0c9e54de29b10731"
+  integrity sha512-kKbcKkts272Ju5xjGKI3pXTOpiJxW4OQbDF8Vmw/NIkkuJLo8GlRCFfeOfoN/hilvlYQgENA67GCgSWccbvu7w==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.200"
     "@aws-cdk/asset-kubectl-v20" "^2.1.2"
@@ -2311,9 +2311,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.4.477:
-  version "1.4.499"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.499.tgz#dc36b67f4c8e273524e8d2080c5203a6a76987b6"
-  integrity sha512-0NmjlYBLKVHva4GABWAaHuPJolnDuL0AhV3h1hES6rcLCWEIbRL6/8TghfsVwkx6TEroQVdliX7+aLysUpKvjw==
+  version "1.4.500"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.500.tgz#7dd05fdfbe02ed34b9f6099cfe01407b473d5af7"
+  integrity sha512-P38NO8eOuWOKY1sQk5yE0crNtrjgjJj6r3NrbIKtG18KzCHmHE2Bt+aQA7/y0w3uYsHWxDa6icOohzjLJ4vJ4A==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -4864,9 +4864,9 @@ npm-bundled@^3.0.0:
     npm-normalize-package-bin "^3.0.0"
 
 npm-check-updates@^16:
-  version "16.13.0"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.13.0.tgz#92df9da56cc69657705c8abec46934cc99ac79f2"
-  integrity sha512-zTJCqov2+KpCLM7lOOxXLFiqKg8RLt10dempIbE9EfKCzoN1yqSrDcBCpU6uOmlSRy3IIGm1rK+piCrn+uulJw==
+  version "16.13.1"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.13.1.tgz#7aa0d24b180b6b7f4a881abff7d7150f0ca5a884"
+  integrity sha512-RIKBemiyAOEAUfzgYzDffLQwXI/Zo4CMSGHtup9fUoBpHqPNtD0pPFjpxDnt/sFpGiV5iANdE2Ck6xOxuQFfJg==
   dependencies:
     chalk "^5.3.0"
     cli-table3 "^0.6.3"
@@ -5300,9 +5300,9 @@ progress@^2.0.3:
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
 projen@^0.72.21:
-  version "0.72.21"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.72.21.tgz#518f44266e02d24305c7461556e8757da601b1f1"
-  integrity sha512-3Do7uUsoc3KrLrrUdjgbJ+nUozIxr+poYOs64PqdCPk9Ce7xjHeJIUh6nTsKHXDWUskrD2FDO/eQcRyynCJgVA==
+  version "0.72.22"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.72.22.tgz#3f8a3e55ae91deeb6ebd2f752a4b01581ef70d44"
+  integrity sha512-cJ5szJDx/JvyiWFm+NFFn+mqMSjYawBnXffe+4fgpCbCtvZJds8YougwuRbgdRyV8GoroDFiTsV1wpnWjFz4/Q==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -6417,9 +6417,9 @@ typescript@4.9.x:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.3.0-dev.20230815"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230815.tgz#290cf6828530783e40518bc85e98fecf9ab0e280"
-  integrity sha512-AB4arWte1oMsTpFUSnkhgLOzWRR6SLMtQ4WjDl+I0mDC3nh0UH5SEJtwjSt7lYIg/xylgXduCFEDoM1Vvv3uPg==
+  version "5.3.0-dev.20230824"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230824.tgz#14fc65c14c588363c0d290dbbbda8ae0968fd95b"
+  integrity sha512-iiUWxGibzrRHEBLDJfVymsvpPKflf3cMrw0oQTMQoguFS2ikNlVlfQWAsYeHqGpRQc77nSQkzsE9rAHNHqvIjw==
 
 typescript@~3.9.10:
   version "3.9.10"
