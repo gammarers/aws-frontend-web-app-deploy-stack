@@ -49,6 +49,11 @@ Object {
           "S3Bucket": "cdk-hnb659fds-assets-012345678901-us-east-1",
           "S3Key": "HASH.zip",
         },
+        "Environment": Object {
+          "Variables": Object {
+            "AWS_CA_BUNDLE": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+          },
+        },
         "Handler": "index.handler",
         "Layers": Array [
           Object {
@@ -469,17 +474,7 @@ Object {
           "HttpVersion": "http2and3",
           "IPV6Enabled": true,
           "Logging": Object {
-            "Bucket": Object {
-              "Fn::Join": Array [
-                "",
-                Array [
-                  "frontend-web-app-example-access-log-bucket.s3.us-east-1.",
-                  Object {
-                    "Ref": "AWS::URLSuffix",
-                  },
-                ],
-              ],
-            },
+            "Bucket": "frontend-web-app-example-access-log-bucket.s3.us-east-1.amazonaws.com",
             "Prefix": "example.com/",
           },
           "Origins": Array [
