@@ -37,7 +37,7 @@
     "organization": false
   },
   "devDependencies": {
-    "@gammarer/aws-secure-bucket": "0.12.5",
+    "@gammarer/aws-secure-bucket": "0.12.6",
     "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer": "0.3.x",
     "@types/jest": "^27",
     "@types/node": "^18",
@@ -57,7 +57,7 @@
     "jsii-pacmak": "^1.88.0",
     "jsii-rosetta": "~5.0.0",
     "npm-check-updates": "^16",
-    "projen": "^0.72.25",
+    "projen": "^0.72.26",
     "standard-version": "^9",
     "ts-jest": "^27",
     "ts-node": "^10.9.1",
