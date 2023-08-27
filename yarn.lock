@@ -364,22 +364,22 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.48.0.tgz#642633964e217905436033a2bd08bf322849b7fb"
   integrity sha512-ZSjtmelB7IJfWD2Fvb7+Z+ChTIKWq6kjda95fLcQKNS5aheVHn4IkfgRQE3sIIzTcSLwLcLZUD9UBt+V7+h+Pw==
 
-"@gammarer/aws-secure-bucket@0.12.5", "@gammarer/aws-secure-bucket@~0.12":
-  version "0.12.5"
-  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-bucket/-/aws-secure-bucket-0.12.5.tgz#ae98801c2828399506c0dd4303a0e0afe05f3a03"
-  integrity sha512-Du9+mDu8VqfoYisZBuek/ZUhgUBNa/0/GK80OEFLd9Z4pkWppqV2kMQK+raVsEfVeVjUios2OMvzS7Rbc8mFVQ==
+"@gammarer/aws-secure-bucket@0.12.6", "@gammarer/aws-secure-bucket@~0.12":
+  version "0.12.6"
+  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-bucket/-/aws-secure-bucket-0.12.6.tgz#662a88f3e5247c846ed1628c7beebf9b6d20f669"
+  integrity sha512-vqo4uI49IORmpPB9xWEaO9aX3ZK1I3CZkOx2OZkMsK+hfdFAj89ogls/OiAJJT2rcsCJ5nzJI8/I8tAeydztWQ==
 
 "@gammarer/aws-secure-cloudfront-origin-bucket@0.9.x":
-  version "0.9.2"
-  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-cloudfront-origin-bucket/-/aws-secure-cloudfront-origin-bucket-0.9.2.tgz#eb5c64a8c249172d2789b6c4cec061dcc231c2d3"
-  integrity sha512-MWOSA0h8qME0kkF8uHXeb9IL1UVC7koDPdPmVCf5Km00JVMsZ0S15om1REp2kydZHKU2uiZWJ8uXUYzOIzGkrw==
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-cloudfront-origin-bucket/-/aws-secure-cloudfront-origin-bucket-0.9.3.tgz#43832f7857351aacc0683138cc52b7c6c57af42b"
+  integrity sha512-UhbwG/SiEnyY8BrZRlY8VWRexlgpzl7xxvuLFFMRYyz+SwziWwfq066txx2argslO2WqkrZe33rjGU15XJaQ2Q==
   dependencies:
     "@gammarer/aws-secure-bucket" "~0.12"
 
 "@gammarer/aws-secure-frontend-web-app-cloudfront-distribution@0.8.x":
-  version "0.8.13"
-  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-0.8.13.tgz#23e2215b6f4c1f77b33dedd3b9c377a8f8ae410d"
-  integrity sha512-A1SyU4E4x5XMH1vVw3ZO33Fy31Bh8raXNZInpwWTdl1IVLwJhKN3bgZuVGQSe+aKcqqHm7P5Xevxf3nF+AMnPg==
+  version "0.8.14"
+  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-0.8.14.tgz#f070cca399f78bea03cfa0e2462a0826d3fc6fd5"
+  integrity sha512-PlPgc3MiJY7oN4M46DSame++TSZGbWY212QvGF4CeZ9bpNfBOCAZWvpwaEavgtaRAD/vdoTv0T43r5NRc08+mg==
 
 "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer@0.3.x":
   version "0.3.36"
@@ -1671,9 +1671,9 @@ camelcase@^7.0.1:
   integrity sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==
 
 caniuse-lite@^1.0.30001517:
-  version "1.0.30001523"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001523.tgz#b838f70b1a98c556776b998fafb47d2b64146d4f"
-  integrity sha512-I5q5cisATTPZ1mc588Z//pj/Ox80ERYDfR71YnvY7raS/NOk8xXlZcB0sF7JdqaV//kOaa6aus7lRfpdnt1eBA==
+  version "1.0.30001524"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001524.tgz#1e14bce4f43c41a7deaeb5ebfe86664fe8dadb80"
+  integrity sha512-Jj917pJtYg9HSJBF95HVX3Cdr89JUyLT4IZ8SvM5aDRni95swKgYi3TgYLH5hnGfPE/U1dg6IfZ50UsIlLkwSA==
 
 case@1.6.3, case@^1.6.3:
   version "1.6.3"
@@ -5308,10 +5308,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.72.25:
-  version "0.72.25"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.72.25.tgz#b6af8378b5421fc675860996e77224797eebacde"
-  integrity sha512-mu9FQIz8drJYrymPihzNFljRnBZm5+uZRTOwwJ3VCRINE45Av/FCB6O21qd0sUpos7ijDXTyN8s4VCS+tSFqFA==
+projen@^0.72.26:
+  version "0.72.26"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.72.26.tgz#ed0f5e780a0293f5a410a3b64d2141d077847044"
+  integrity sha512-W2ZBXgHumkO6WZFEVcQmGSaG7Ck7D1w1dAgeg6bx5c7gQcJCYJnNDo9ZR7GvTnRxJl5tDjhv4G/rwj7kovrDFA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
