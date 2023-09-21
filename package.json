@@ -34,7 +34,7 @@
   "author": {
     "name": "yicr",
     "email": "yicr@users.noreply.github.com",
-    "organization": false
+    "organization": true
   },
   "devDependencies": {
     "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer": "0.3.x",
