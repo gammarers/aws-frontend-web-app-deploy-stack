@@ -11,7 +11,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: '@gammarer/aws-frontend-web-app-deploy-stack',
   description: 'This is an AWS CDK Construct to make deploying a Frontend Web App (SPA) deploy to S3 behind CloudFront.',
   keywords: ['aws', 'cdk', 'cloudfront', 'cdn', 'web', 'spa', 'deploy'],
-  repositoryUrl: 'https://github.com/yicr/aws-frontend-web-app-deploy-stack.git',
+  repositoryUrl: 'https://github.com/gammarer/aws-frontend-web-app-deploy-stack.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
   deps: [
     '@gammarer/aws-secure-cloudfront-origin-bucket@~0.9.2',
