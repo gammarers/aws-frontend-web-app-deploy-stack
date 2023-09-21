@@ -27,7 +27,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution@~0.9.0',
     '@gammarer/aws-secure-bucket@~0.12.4',
   ],
-  minNodeVersion: '18.0.0',
+  minNodeVersion: '16.0.0',
   workflowNodeVersion: '18.17.1',
   depsUpgradeOptions: {
     workflowOptions: {
