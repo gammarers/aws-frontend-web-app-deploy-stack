@@ -17,6 +17,7 @@
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
+    "package:dotnet": "npx projen package:dotnet",
     "package:java": "npx projen package:java",
     "package:js": "npx projen package:js",
     "package:python": "npx projen package:python",
@@ -150,6 +151,10 @@
       "python": {
         "distName": "gammarer.aws-frontend-web-app-deploy-stack",
         "module": "gammarer.aws_frontend_web_app_deploy_stack"
+      },
+      "dotnet": {
+        "namespace": "Gammarer.CDK.AWS",
+        "packageId": "Gammarer.CDK.AWS.FrontendWebAppDeployStack"
       }
     },
     "tsc": {

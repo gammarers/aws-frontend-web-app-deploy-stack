@@ -54,5 +54,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
     mavenArtifactId: 'aws-frontend-web-app-deploy-stack',
     mavenEndpoint: 'https://s01.oss.sonatype.org',
   },
+  publishToNuget: {
+    dotNetNamespace: 'Gammarer.CDK.AWS',
+    packageId: 'Gammarer.CDK.AWS.FrontendWebAppDeployStack',
+  },
 });
 project.synth();
