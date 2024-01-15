@@ -1,67 +1,3 @@
-[![GitHub](https://img.shields.io/github/license/yicr/aws-frontend-web-app-deploy-stack?style=flat-square)](https://github.com/yicr/aws-frontend-web-app-deploy-stack/blob/main/LICENSE)
-[![npm (scoped)](https://img.shields.io/npm/v/@gammarer/aws-frontend-web-app-deploy-stack?style=flat-square)](https://www.npmjs.com/package/@gammarer/aws-frontend-web-app-deploy-stack)
-[![PyPI](https://img.shields.io/pypi/v/gammarer.aws-frontend-web-app-deploy-stack?style=flat-square)](https://pypi.org/project/gammarer.aws-frontend-web-app-deploy-stack/)
-[![Nuget](https://img.shields.io/nuget/v/Gammarer.CDK.AWS.FrontendWebAppDeployStack?style=flat-square)](https://www.nuget.org/packages/Gammarer.CDK.AWS.FrontendWebAppDeployStack/)
-[![Sonatype Nexus (Releases)](https://img.shields.io/nexus/r/com.gammarer/aws-frontend-web-app-deploy-stack?server=https%3A%2F%2Fs01.oss.sonatype.org%2F&style=flat-square)](https://s01.oss.sonatype.org/content/repositories/releases/com/gammarer/aws-frontend-web-app-deploy-stack/)
-[![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/yicr/aws-frontend-web-app-deploy-stack/release.yml?branch=main&label=release&style=flat-square)](https://github.com/yicr/aws-frontend-web-app-deploy-stack/actions/workflows/release.yml)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/yicr/aws-frontend-web-app-deploy-stack?sort=semver&style=flat-square)](https://github.com/yicr/aws-frontend-web-app-deploy-stack/releases)
-
-# AWS Frontend Web App Deploy Stack
-
-This is an AWS CDK Construct to make deploying a Frontend Web App (SPA) deploy to S3 behind CloudFront.
-
-## Install
-
-### TypeScript
-
-```shell
-npm install @gammarer/aws-frontend-web-app-deploy-stack
-# or
-yarn add @gammarer/aws-frontend-web-app-deploy-stack
-```
-
-### Python
-
-```shell
-pip install gammarer.aws-frontend-web-app-deploy-stack
-```
-
-### C# / .NET
-
-```shell
-dotnet add package Gammarer.CDK.AWS.FrontendWebAppDeployStack
-```
-
-### Java
-
-Add the following to pom.xml:
-
-```xml
-<dependency>
-  <groupId>com.gammarer</groupId>
-  <artifactId>aws-frontend-web-app-deploy-stack</artifactId>
-</dependency>
-```
-
-## Example
-
-```typescript
-import { FrontendWebAppDeployStack } from '@gammarer/aws-frontend-web-app-deploy-stack';
-
-new FrontendWebAppDeployStack(app, 'FrontendWebAppDeployStack', {
-  env: { account: '012345678901', region: 'us-east-1' },
-  domainName: 'example.com',
-  hostedZoneId: 'Z0000000000000000000Q',
-  originBucketName: 'frontend-web-app-example-origin-bucket', // new create in this stack
-  deploySourceAssetPath: 'website/',
-  logBucketArn: 'arn:aws:s3:::frontend-web-app-example-access-log-bucket', // already created
-});
-
-```
-
-## License
-
-This project is licensed under the Apache-2.0 License.
 # API Reference <a name="API Reference" id="api-reference"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -526,7 +462,7 @@ Convert an object, potentially containing tokens, to a YAML string.
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isConstruct"></a>
+##### ~~`isConstruct`~~ <a name="isConstruct" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isConstruct"></a>
 
 ```typescript
 import { FrontendWebAppDeployStack } from '@gammarer/aws-frontend-web-app-deploy-stack'
@@ -535,20 +471,6 @@ FrontendWebAppDeployStack.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
-
-Use this method instead of `instanceof` to properly detect `Construct`
-instances, even when the construct library is symlinked.
-
-Explanation: in JavaScript, multiple copies of the `constructs` library on
-disk are seen as independent, completely different libraries. As a
-consequence, the class `Construct` in each copy of the `constructs` library
-is seen as a different class, and an instance of one class will not test as
-`instanceof` the other class. `npm install` will not create installations
-like this, but users may manually symlink construct libraries together or
-use a monorepo tool: in those cases, multiple copies of the `constructs`
-library can be accidentally installed, and `instanceof` will behave
-unpredictably. It is safest to avoid using `instanceof`, and using
-this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStack.isConstruct.parameter.x"></a>
 
@@ -977,7 +899,6 @@ const frontendWebAppDeployStackProps: FrontendWebAppDeployStackProps = { ... }
 | <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
 | <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.permissionsBoundary">permissionsBoundary</a></code> | <code>aws-cdk-lib.PermissionsBoundary</code> | Options for applying a permissions boundary to all IAM Roles and Users created within this Stage. |
 | <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
-| <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.suppressTemplateIndentation">suppressTemplateIndentation</a></code> | <code>boolean</code> | Enable this flag to suppress indentation in generated CloudFormation templates. |
 | <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
 | <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
 | <code><a href="#@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
@@ -1130,23 +1051,6 @@ public readonly stackName: string;
 - *Default:* Derived from construct path.
 
 Name to deploy the stack with.
-
----
-
-##### `suppressTemplateIndentation`<sup>Optional</sup> <a name="suppressTemplateIndentation" id="@gammarer/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.suppressTemplateIndentation"></a>
-
-```typescript
-public readonly suppressTemplateIndentation: boolean;
-```
-
-- *Type:* boolean
-- *Default:* the value of `@aws-cdk/core:suppressTemplateIndentation`, or `false` if that is not set.
-
-Enable this flag to suppress indentation in generated CloudFormation templates.
-
-If not specified, the value of the `@aws-cdk/core:suppressTemplateIndentation`
-context key will be used. If that is not specified, then the
-default value `false` will be used.
 
 ---
 
