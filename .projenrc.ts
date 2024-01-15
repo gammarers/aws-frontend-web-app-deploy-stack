@@ -15,6 +15,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   keywords: ['aws', 'cdk', 'cloudfront', 'cdn', 'web', 'spa', 'deploy'],
   repositoryUrl: 'https://github.com/gammarer/aws-frontend-web-app-deploy-stack.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
+  majorVersion: 1,
   devDeps: [
     '@gammarer/jest-serializer-aws-cdk-asset-filename-replacer@0.3.x',
     '@gammarer/aws-secure-cloudfront-origin-bucket@~1.2.2',
