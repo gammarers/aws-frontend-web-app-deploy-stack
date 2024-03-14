@@ -16,11 +16,13 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl: 'https://github.com/gammarer/aws-frontend-web-app-deploy-stack.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
   majorVersion: 1,
-  devDeps: [
-    '@gammarer/jest-serializer-aws-cdk-asset-filename-replacer@0.3.x',
+  deps: [
     '@gammarer/aws-secure-cloudfront-origin-bucket@~1.2.2',
     '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution@~1.0.0',
     '@gammarer/aws-secure-bucket@~1.1.2',
+  ],
+  devDeps: [
+    '@gammarer/jest-serializer-aws-cdk-asset-filename-replacer@0.3.x',
   ],
   peerDeps: [
     '@gammarer/aws-secure-cloudfront-origin-bucket@~1.2.2',

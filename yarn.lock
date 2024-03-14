@@ -366,20 +366,20 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.0.tgz#a5417ae8427873f1dd08b70b3574b453e67b5f7f"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
-"@gammarer/aws-secure-bucket@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-bucket/-/aws-secure-bucket-1.1.2.tgz#3bcc2a185fc6a0a980dd77a089e1ad7b62127751"
-  integrity sha512-i/MhBTGrj2SEOShOsA0W0bgAkVbfT/sG6VFei8dDHgnSF4ziVx9papBPdrrg/qVXWPxNTdB/2B4pjxI8L+nTZQ==
+"@gammarer/aws-secure-bucket@~1.1.2":
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-bucket/-/aws-secure-bucket-1.1.10.tgz#a92092c0bf5e49a25e96c5313cee316775762000"
+  integrity sha512-6njRURDJPeblaYc+FZHvMZ/x2Af0ydBiIP6PzPDHQpQ32+WkCDFt4tqzz4GtNnIzHaEARJifXGYQA34M/R+pJg==
 
-"@gammarer/aws-secure-cloudfront-origin-bucket@1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-cloudfront-origin-bucket/-/aws-secure-cloudfront-origin-bucket-1.2.2.tgz#c0d8e9f69fb53e749b47cbd6bb2872cbc3da30c1"
-  integrity sha512-sVxPmwb20MwUTPsevyBudeLcLJaw/vHEa0nKExOmRtGfnzPa3TjUgykANPBNHSFMyZmY+0j1kXgNnSCxVdhH8g==
+"@gammarer/aws-secure-cloudfront-origin-bucket@~1.2.2":
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-cloudfront-origin-bucket/-/aws-secure-cloudfront-origin-bucket-1.2.10.tgz#1b842d6364e3086108d11fc21fc41a996f986092"
+  integrity sha512-R2vfWmQqEM9olDIKCx5wY5hoPJ88ZwaDIK/T/uxR9urV/udWkHR7u2JRdNEIQnlU3ZiVSK31ZpFZ/jucTvTcgg==
 
-"@gammarer/aws-secure-frontend-web-app-cloudfront-distribution@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-1.0.0.tgz#de1c5ea7ca5cd19f7317b4431131d80e0a195546"
-  integrity sha512-Q6M60Q822AEMQMpbllI9qqSGiYNbyum1ATWShBrCx3a3euJqyN8DUKx6nbackzZnv78zNMAmsA2BJWibtYddGg==
+"@gammarer/aws-secure-frontend-web-app-cloudfront-distribution@~1.0.0":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-1.0.8.tgz#6fdc726d08fd33ce7188c3d30b23f532f5ab7b6f"
+  integrity sha512-JKdg5LNnFiBTnEobaNiPmGAzGGB/OOKjlGzQXf9IrRRU9KbtFw3KYJkcO2rRF1VqjnjSbNtOTxPxwIZUvj9RCg==
 
 "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer@0.3.x":
   version "0.3.41"

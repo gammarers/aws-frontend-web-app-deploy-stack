@@ -38,9 +38,6 @@
     "organization": true
   },
   "devDependencies": {
-    "@gammarer/aws-secure-bucket": "1.1.2",
-    "@gammarer/aws-secure-cloudfront-origin-bucket": "1.2.2",
-    "@gammarer/aws-secure-frontend-web-app-cloudfront-distribution": "1.0.0",
     "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer": "0.3.x",
     "@types/jest": "^29.5.12",
     "@types/node": "^16",
@@ -70,6 +67,11 @@
     "@gammarer/aws-secure-frontend-web-app-cloudfront-distribution": "~1.0.0",
     "aws-cdk-lib": "^2.80.0",
     "constructs": "^10.0.5"
+  },
+  "dependencies": {
+    "@gammarer/aws-secure-bucket": "~1.1.2",
+    "@gammarer/aws-secure-cloudfront-origin-bucket": "~1.2.2",
+    "@gammarer/aws-secure-frontend-web-app-cloudfront-distribution": "~1.0.0"
   },
   "keywords": [
     "aws",
