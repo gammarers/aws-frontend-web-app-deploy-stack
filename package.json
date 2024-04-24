@@ -145,8 +145,8 @@
         "module": "gammarers.aws_frontend_web_app_deploy_stack"
       },
       "dotnet": {
-        "namespace": "Gammarer.CDK.AWS",
-        "packageId": "Gammarer.CDK.AWS.FrontendWebAppDeployStack"
+        "namespace": "Gammarers.CDK.AWS",
+        "packageId": "Gammarers.CDK.AWS.FrontendWebAppDeployStack"
       }
     },
     "tsc": {

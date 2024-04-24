@@ -51,8 +51,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     module: 'gammarers.aws_frontend_web_app_deploy_stack',
   },
   publishToNuget: {
-    dotNetNamespace: 'Gammarer.CDK.AWS',
-    packageId: 'Gammarer.CDK.AWS.FrontendWebAppDeployStack',
+    dotNetNamespace: 'Gammarers.CDK.AWS',
+    packageId: 'Gammarers.CDK.AWS.FrontendWebAppDeployStack',
   },
 });
 project.synth();
