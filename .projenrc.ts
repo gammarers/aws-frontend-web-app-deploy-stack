@@ -17,17 +17,17 @@ const project = new awscdk.AwsCdkConstructLibrary({
   npmAccess: javascript.NpmAccess.PUBLIC,
   majorVersion: 1,
   deps: [
-    '@gammarer/aws-secure-cloudfront-origin-bucket@~1.2.2',
-    '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution@~1.0.0',
-    '@gammarer/aws-secure-bucket@~1.1.2',
+    '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@~1.3.0',
+    '@gammarers/aws-secure-cloudfront-origin-bucket@~1.5.0',
+    '@gammarers/aws-secure-bucket@~1.3.1',
   ],
   devDeps: [
     '@gammarer/jest-serializer-aws-cdk-asset-filename-replacer@0.3.x',
   ],
   peerDeps: [
-    '@gammarer/aws-secure-cloudfront-origin-bucket@~1.2.2',
-    '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution@~1.0.0',
-    '@gammarer/aws-secure-bucket@~1.1.2',
+    '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@~1.3.0',
+    '@gammarers/aws-secure-cloudfront-origin-bucket@~1.5.0',
+    '@gammarers/aws-secure-bucket@~1.3.1',
   ],
   minNodeVersion: '16.0.0',
   workflowNodeVersion: '20.11.0',
