@@ -20,6 +20,45 @@ exports[`FrontendWebAppDeployStack Testing Should match snapshot 1`] = `
     },
   },
   "Resources": {
+    "BucketPolicy37195417": {
+      "Properties": {
+        "Bucket": {
+          "Ref": "SecureCloudFrontOriginBucket152632A1",
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "CanonicalUser": {
+                  "Fn::GetAtt": [
+                    "OriginAccessIdentityDF1E3CAC",
+                    "S3CanonicalUserId",
+                  ],
+                },
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "SecureCloudFrontOriginBucket152632A1",
+                        "Arn",
+                      ],
+                    },
+                    "/*",
+                  ],
+                ],
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+      },
+      "Type": "AWS::S3::BucketPolicy",
+    },
     "Certificate4E7ABB08": {
       "Properties": {
         "DomainName": "example.com",
