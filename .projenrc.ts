@@ -47,8 +47,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     },
   },
   publishToPypi: {
-    distName: 'gammarer.aws-frontend-web-app-deploy-stack',
-    module: 'gammarer.aws_frontend_web_app_deploy_stack',
+    distName: 'gammarers.aws-frontend-web-app-deploy-stack',
+    module: 'gammarers.aws_frontend_web_app_deploy_stack',
   },
   publishToMaven: {
     mavenGroupId: 'com.gammarer',
