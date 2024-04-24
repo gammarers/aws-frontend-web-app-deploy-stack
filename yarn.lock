@@ -367,21 +367,6 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.0.tgz#a5417ae8427873f1dd08b70b3574b453e67b5f7f"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
-"@gammarer/aws-secure-bucket@~1.1.2":
-  version "1.1.13"
-  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-bucket/-/aws-secure-bucket-1.1.13.tgz#2caf80c8a922354c51053f7a48f73e3e873392a0"
-  integrity sha512-NtK8GgEY2mnITw1+Rtgjlm+4eKFKU7a3i/z4qkf9bLiRuD7XirDLGvzAqi4GMKVEYA4jYeSDkSzPkjAkUOsY+w==
-
-"@gammarer/aws-secure-cloudfront-origin-bucket@~1.2.2":
-  version "1.2.10"
-  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-cloudfront-origin-bucket/-/aws-secure-cloudfront-origin-bucket-1.2.10.tgz#1b842d6364e3086108d11fc21fc41a996f986092"
-  integrity sha512-R2vfWmQqEM9olDIKCx5wY5hoPJ88ZwaDIK/T/uxR9urV/udWkHR7u2JRdNEIQnlU3ZiVSK31ZpFZ/jucTvTcgg==
-
-"@gammarer/aws-secure-frontend-web-app-cloudfront-distribution@~1.0.0":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@gammarer/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-1.0.8.tgz#6fdc726d08fd33ce7188c3d30b23f532f5ab7b6f"
-  integrity sha512-JKdg5LNnFiBTnEobaNiPmGAzGGB/OOKjlGzQXf9IrRRU9KbtFw3KYJkcO2rRF1VqjnjSbNtOTxPxwIZUvj9RCg==
-
 "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer@0.3.x":
   version "0.3.41"
   resolved "https://registry.yarnpkg.com/@gammarer/jest-serializer-aws-cdk-asset-filename-replacer/-/jest-serializer-aws-cdk-asset-filename-replacer-0.3.41.tgz#2151fb3181af8c9b8bb630f71258ffd3a44abe66"
@@ -389,6 +374,23 @@
   dependencies:
     aws-cdk-lib "^2.93.0"
     constructs "^10.2.69"
+
+"@gammarers/aws-secure-bucket@~1.3.1":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-bucket/-/aws-secure-bucket-1.3.2.tgz#8ed29da72a06b2a6d053b467a30e458d9f736123"
+  integrity sha512-Mn3I8/FNBetvwcNWArwiPqTdftV0drL+jgRE13Zu9Bz+RFrLpIsi94JkaNB95xOnFdF8rsX5BGw7rVLxq79hfg==
+
+"@gammarers/aws-secure-cloudfront-origin-bucket@~1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-cloudfront-origin-bucket/-/aws-secure-cloudfront-origin-bucket-1.5.0.tgz#b6cfaa7ee60a0f21b7e9513c46e6b5f61f892d22"
+  integrity sha512-OuHLKNUdml+4pu/DCnPZedE2TXD3oj12/Ox3zrZjcunUnkSwU6nboubmEt65TnyFD7aERDZ53+jOEhNQwVsUXA==
+  dependencies:
+    "@gammarers/aws-secure-bucket" "~1.3.1"
+
+"@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@~1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-1.3.0.tgz#cc3a6438aac524d44594efb5b9799a83c3ccc6a9"
+  integrity sha512-lZN6TYDkFC3jqiUAeYtzuxUDAQHEOMigz0gCZ7H0Pusqw+U778LPT9jRXx6DBaqfW9peUErfCVPmwJQ7Wz5bsg==
 
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"

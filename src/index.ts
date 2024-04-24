@@ -1,5 +1,5 @@
-import { SecureCloudFrontOriginBucket } from '@gammarer/aws-secure-cloudfront-origin-bucket';
-import { SecureFrontendWebAppCloudFrontDistribution } from '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution';
+import { SecureCloudFrontOriginBucket, SecureCloudFrontOriginType } from '@gammarers/aws-secure-cloudfront-origin-bucket';
+import { SecureFrontendWebAppCloudFrontDistribution, S3OriginAccessType } from '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution';
 import * as cdk from 'aws-cdk-lib';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
@@ -27,6 +27,7 @@ export class FrontendWebAppDeployStack extends cdk.Stack {
     // 👇Create Secure Cloud Front Origin Bucket
     const originBucket = new SecureCloudFrontOriginBucket(this, 'SecureCloudFrontOriginBucket', {
       bucketName: props.originBucketName,
+      cloudFrontOriginType: SecureCloudFrontOriginType.ORIGIN_ACCESS_IDENTITY,
       cloudFrontOriginAccessIdentityS3CanonicalUserId: oai.cloudFrontOriginAccessIdentityS3CanonicalUserId,
     });
 
@@ -48,6 +49,7 @@ export class FrontendWebAppDeployStack extends cdk.Stack {
       accessLogBucket: s3.Bucket.fromBucketArn(this, 'LogBucket', props.logBucketArn),
       certificate: certificate,
       domainName: props.domainName,
+      s3OriginAccessType: S3OriginAccessType.ORIGIN_ACCESS_IDENTITY,
       originAccessIdentity: oai,
       originBucket: originBucket,
     });
