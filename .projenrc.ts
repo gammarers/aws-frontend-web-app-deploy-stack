@@ -6,8 +6,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   authorOrganization: true,
   cdkVersion: '2.80.0',
   constructsVersion: '10.0.5',
-  typescriptVersion: '5.2.x',
-  jsiiVersion: '5.2.x',
+  typescriptVersion: '5.4.x',
+  jsiiVersion: '5.4.x',
   projenrcTs: true,
   defaultReleaseBranch: 'main',
   name: '@gammarers/aws-frontend-web-app-deploy-stack',
@@ -17,20 +17,20 @@ const project = new awscdk.AwsCdkConstructLibrary({
   npmAccess: javascript.NpmAccess.PUBLIC,
   majorVersion: 1,
   deps: [
-    '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@~1.3.0',
-    '@gammarers/aws-secure-cloudfront-origin-bucket@~1.5.0',
-    '@gammarers/aws-secure-bucket@~1.3.1',
+    '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@~1.4.7',
+    '@gammarers/aws-secure-cloudfront-origin-bucket@~1.6.11',
+    '@gammarers/aws-secure-bucket@~1.4.1',
   ],
   devDeps: [
-    '@gammarer/jest-serializer-aws-cdk-asset-filename-replacer@0.3.x',
+    '@gammarers/jest-aws-cdk-asset-filename-renamer@~0.5.8',
   ],
   peerDeps: [
-    '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@~1.3.0',
-    '@gammarers/aws-secure-cloudfront-origin-bucket@~1.5.0',
-    '@gammarers/aws-secure-bucket@~1.3.1',
+    '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@~1.4.7',
+    '@gammarers/aws-secure-cloudfront-origin-bucket@~1.6.11',
+    '@gammarers/aws-secure-bucket@~1.4.1',
   ],
   minNodeVersion: '16.0.0',
-  workflowNodeVersion: '20.11.0',
+  workflowNodeVersion: '22.4.x',
   depsUpgradeOptions: {
     workflowOptions: {
       labels: ['auto-approve', 'auto-merge'],
@@ -43,7 +43,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
   jestOptions: {
     jestConfig: {
-      snapshotSerializers: ['<rootDir>/node_modules/@gammarer/jest-serializer-aws-cdk-asset-filename-replacer'],
+      snapshotSerializers: ['<rootDir>/node_modules/@gammarers/jest-aws-cdk-asset-filename-renamer'],
     },
   },
   publishToPypi: {

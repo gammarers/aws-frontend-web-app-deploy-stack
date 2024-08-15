@@ -15,10 +15,28 @@ This is an AWS CDK Construct to make deploying a Frontend Web App (SPA) deploy t
 
 ### TypeScript
 
+#### install by npm
+
 ```shell
 npm install @gammarers/aws-frontend-web-app-deploy-stack
-# or
+```
+
+#### install by yarn
+
+```shell
 yarn add @gammarers/aws-frontend-web-app-deploy-stack
+```
+
+#### install by pnpm
+
+```shell
+pnpm add @gammarers/aws-frontend-web-app-deploy-stack
+```
+
+#### install by bun
+
+```shell
+bun add @gammarers/aws-frontend-web-app-deploy-stack
 ```
 
 ### Python
