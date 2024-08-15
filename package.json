@@ -37,7 +37,7 @@
     "organization": true
   },
   "devDependencies": {
-    "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer": "0.3.x",
+    "@gammarers/jest-aws-cdk-asset-filename-renamer": "~0.5.8",
     "@types/jest": "^29.5.12",
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^7",
@@ -61,16 +61,16 @@
     "typescript": "5.4.x"
   },
   "peerDependencies": {
-    "@gammarers/aws-secure-bucket": "~1.3.1",
-    "@gammarers/aws-secure-cloudfront-origin-bucket": "~1.5.0",
-    "@gammarers/aws-secure-frontend-web-app-cloudfront-distribution": "~1.3.0",
+    "@gammarers/aws-secure-bucket": "~1.4.1",
+    "@gammarers/aws-secure-cloudfront-origin-bucket": "~1.6.11",
+    "@gammarers/aws-secure-frontend-web-app-cloudfront-distribution": "~1.4.7",
     "aws-cdk-lib": "^2.80.0",
     "constructs": "^10.0.5"
   },
   "dependencies": {
-    "@gammarers/aws-secure-bucket": "~1.3.1",
-    "@gammarers/aws-secure-cloudfront-origin-bucket": "~1.5.0",
-    "@gammarers/aws-secure-frontend-web-app-cloudfront-distribution": "~1.3.0"
+    "@gammarers/aws-secure-bucket": "~1.4.1",
+    "@gammarers/aws-secure-cloudfront-origin-bucket": "~1.6.11",
+    "@gammarers/aws-secure-frontend-web-app-cloudfront-distribution": "~1.4.7"
   },
   "keywords": [
     "aws",
@@ -93,7 +93,7 @@
   "jest": {
     "coverageProvider": "v8",
     "snapshotSerializers": [
-      "<rootDir>/node_modules/@gammarer/jest-serializer-aws-cdk-asset-filename-replacer"
+      "<rootDir>/node_modules/@gammarers/jest-aws-cdk-asset-filename-renamer"
     ],
     "testMatch": [
       "<rootDir>/@(src|test)/**/*(*.)@(spec|test).ts?(x)",
