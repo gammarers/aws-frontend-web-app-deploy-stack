@@ -20,45 +20,6 @@ exports[`FrontendWebAppDeployStack Testing Should match snapshot 1`] = `
     },
   },
   "Resources": {
-    "BucketPolicy37195417": {
-      "Properties": {
-        "Bucket": {
-          "Ref": "SecureCloudFrontOriginBucket152632A1",
-        },
-        "PolicyDocument": {
-          "Statement": [
-            {
-              "Action": "s3:GetObject",
-              "Effect": "Allow",
-              "Principal": {
-                "CanonicalUser": {
-                  "Fn::GetAtt": [
-                    "OriginAccessIdentityDF1E3CAC",
-                    "S3CanonicalUserId",
-                  ],
-                },
-              },
-              "Resource": {
-                "Fn::Join": [
-                  "",
-                  [
-                    {
-                      "Fn::GetAtt": [
-                        "SecureCloudFrontOriginBucket152632A1",
-                        "Arn",
-                      ],
-                    },
-                    "/*",
-                  ],
-                ],
-              },
-            },
-          ],
-          "Version": "2012-10-17",
-        },
-      },
-      "Type": "AWS::S3::BucketPolicy",
-    },
     "Certificate4E7ABB08": {
       "Properties": {
         "DomainName": "example.com",
@@ -105,7 +66,7 @@ exports[`FrontendWebAppDeployStack Testing Should match snapshot 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "python3.9",
+        "Runtime": "python3.11",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
@@ -283,6 +244,7 @@ exports[`FrontendWebAppDeployStack Testing Should match snapshot 1`] = `
         "DistributionPaths": [
           "/*",
         ],
+        "OutputObjectKeys": true,
         "Prune": true,
         "ServiceToken": {
           "Fn::GetAtt": [
@@ -299,14 +261,6 @@ exports[`FrontendWebAppDeployStack Testing Should match snapshot 1`] = `
       },
       "Type": "Custom::CDKBucketDeployment",
       "UpdateReplacePolicy": "Delete",
-    },
-    "OriginAccessIdentityDF1E3CAC": {
-      "Properties": {
-        "CloudFrontOriginAccessIdentityConfig": {
-          "Comment": "Allows CloudFront to reach the bucket",
-        },
-      },
-      "Type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
     },
     "ResponseHeadersPolicy13DBF9E0": {
       "Properties": {
@@ -438,14 +392,32 @@ exports[`FrontendWebAppDeployStack Testing Should match snapshot 1`] = `
             },
             {
               "Action": "s3:GetObject",
+              "Condition": {
+                "StringEquals": {
+                  "AWS:SourceArn": {
+                    "Fn::Join": [
+                      "",
+                      [
+                        "arn:",
+                        {
+                          "Ref": "AWS::Partition",
+                        },
+                        ":cloudfront::",
+                        {
+                          "Ref": "AWS::AccountId",
+                        },
+                        ":distribution/",
+                        {
+                          "Ref": "SecureFrontendWebAppCloudFrontDistributionFBE118EA",
+                        },
+                      ],
+                    ],
+                  },
+                },
+              },
               "Effect": "Allow",
               "Principal": {
-                "CanonicalUser": {
-                  "Fn::GetAtt": [
-                    "OriginAccessIdentityDF1E3CAC",
-                    "S3CanonicalUserId",
-                  ],
-                },
+                "Service": "cloudfront.amazonaws.com",
               },
               "Resource": {
                 "Fn::Join": [
@@ -525,18 +497,14 @@ exports[`FrontendWebAppDeployStack Testing Should match snapshot 1`] = `
                 ],
               },
               "Id": "FrontendWebAppDeployStackSecureFrontendWebAppCloudFrontDistributionOrigin18253E717",
+              "OriginAccessControlId": {
+                "Fn::GetAtt": [
+                  "SecureFrontendWebAppCloudFrontDistributionOrigin1S3OriginAccessControl09AD5FFF",
+                  "Id",
+                ],
+              },
               "S3OriginConfig": {
-                "OriginAccessIdentity": {
-                  "Fn::Join": [
-                    "",
-                    [
-                      "origin-access-identity/cloudfront/",
-                      {
-                        "Ref": "OriginAccessIdentityDF1E3CAC",
-                      },
-                    ],
-                  ],
-                },
+                "OriginAccessIdentity": "",
               },
             },
           ],
@@ -551,6 +519,17 @@ exports[`FrontendWebAppDeployStack Testing Should match snapshot 1`] = `
         },
       },
       "Type": "AWS::CloudFront::Distribution",
+    },
+    "SecureFrontendWebAppCloudFrontDistributionOrigin1S3OriginAccessControl09AD5FFF": {
+      "Properties": {
+        "OriginAccessControlConfig": {
+          "Name": "FrontendWebAppDeployStackSecOrigin1S3OriginAccessControl239764ED",
+          "OriginAccessControlOriginType": "s3",
+          "SigningBehavior": "always",
+          "SigningProtocol": "sigv4",
+        },
+      },
+      "Type": "AWS::CloudFront::OriginAccessControl",
     },
   },
   "Rules": {

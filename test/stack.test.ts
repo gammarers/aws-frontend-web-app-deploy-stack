@@ -19,14 +19,6 @@ describe('FrontendWebAppDeployStack Testing', () => {
     template = Template.fromStack(stack);
   });
 
-  it('Has OriginAccessIdentity', () => {
-    template.hasResourceProperties('AWS::CloudFront::CloudFrontOriginAccessIdentity', {
-      CloudFrontOriginAccessIdentityConfig: {
-        Comment: Match.anyValue(),
-      },
-    });
-  });
-
   it('Has Origin Bucket', () => {
     template.hasResourceProperties('AWS::S3::Bucket', {
       BucketName: 'frontend-web-app-example-origin-bucket',
@@ -41,11 +33,48 @@ describe('FrontendWebAppDeployStack Testing', () => {
       PolicyDocument: {
         Version: '2012-10-17',
         Statement: Match.arrayWith([
-          Match.objectLike({
+          Match.objectEquals({
             Action: 's3:GetObject',
             Effect: 'Allow',
             Principal: {
-              CanonicalUser: Match.anyValue(),
+              Service: 'cloudfront.amazonaws.com',
+            },
+            Resource: {
+              'Fn::Join': [
+                '',
+                [
+                  {
+                    'Fn::GetAtt': [
+                      Match.stringLikeRegexp('SecureCloudFrontOriginBucket'),
+                      'Arn',
+                    ],
+                  },
+                  '/*',
+                ],
+              ],
+            },
+            Condition: {
+              StringEquals: {
+                'AWS:SourceArn': {
+                  'Fn::Join': [
+                    '',
+                    [
+                      'arn:',
+                      {
+                        Ref: 'AWS::Partition',
+                      },
+                      ':cloudfront::',
+                      {
+                        Ref: 'AWS::AccountId',
+                      },
+                      ':distribution/',
+                      {
+                        Ref: Match.stringLikeRegexp('SecureFrontendWebAppCloudFrontDistribution'),
+                      },
+                    ],
+                  ],
+                },
+              },
             },
           }),
         ]),

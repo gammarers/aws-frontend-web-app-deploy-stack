@@ -1,8 +1,7 @@
-import { SecureCloudFrontOriginBucket, SecureCloudFrontOriginType } from '@gammarers/aws-secure-cloudfront-origin-bucket';
-import { SecureFrontendWebAppCloudFrontDistribution, S3OriginAccessType } from '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution';
+import { SecureBucket } from '@gammarers/aws-secure-bucket';
+import { SecureFrontendWebAppCloudFrontDistribution } from '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution';
 import * as cdk from 'aws-cdk-lib';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
-import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 import * as alias from 'aws-cdk-lib/aws-route53-targets';
 import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -21,14 +20,10 @@ export class FrontendWebAppDeployStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props: FrontendWebAppDeployStackProps) {
     super(scope, id, props);
 
-    // 👇Create CloudFront Origin Access Identity.
-    const oai = new cloudfront.OriginAccessIdentity(this, 'OriginAccessIdentity');
-
     // 👇Create Secure Cloud Front Origin Bucket
-    const originBucket = new SecureCloudFrontOriginBucket(this, 'SecureCloudFrontOriginBucket', {
+    const originBucket = new SecureBucket(this, 'SecureCloudFrontOriginBucket', {
       bucketName: props.originBucketName,
-      cloudFrontOriginType: SecureCloudFrontOriginType.ORIGIN_ACCESS_IDENTITY,
-      cloudFrontOriginAccessIdentityS3CanonicalUserId: oai.cloudFrontOriginAccessIdentityS3CanonicalUserId,
+      isCloudFrontOriginBucket: true,
     });
 
     // 👇Get Hosted Zone.
@@ -49,8 +44,6 @@ export class FrontendWebAppDeployStack extends cdk.Stack {
       accessLogBucket: s3.Bucket.fromBucketArn(this, 'LogBucket', props.logBucketArn),
       certificate: certificate,
       domainName: props.domainName,
-      s3OriginAccessType: S3OriginAccessType.ORIGIN_ACCESS_IDENTITY,
-      originAccessIdentity: oai,
       originBucket: originBucket,
     });
 

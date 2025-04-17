@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "name": "@gammarers/jest-aws-cdk-asset-filename-renamer",
-      "version": "~0.5.8",
+      "version": "^0.5.8",
       "type": "build"
     },
     {
@@ -71,12 +71,12 @@
     },
     {
       "name": "jsii-rosetta",
-      "version": "5.4.x",
+      "version": "5.7.x",
       "type": "build"
     },
     {
       "name": "jsii",
-      "version": "5.4.x",
+      "version": "5.7.x",
       "type": "build"
     },
     {
@@ -93,27 +93,12 @@
     },
     {
       "name": "typescript",
-      "version": "5.4.x",
+      "version": "5.7.x",
       "type": "build"
     },
     {
-      "name": "@gammarers/aws-secure-bucket",
-      "version": "~1.4.1",
-      "type": "peer"
-    },
-    {
-      "name": "@gammarers/aws-secure-cloudfront-origin-bucket",
-      "version": "~1.6.11",
-      "type": "peer"
-    },
-    {
-      "name": "@gammarers/aws-secure-frontend-web-app-cloudfront-distribution",
-      "version": "~1.4.7",
-      "type": "peer"
-    },
-    {
       "name": "aws-cdk-lib",
-      "version": "^2.80.0",
+      "version": "^2.189.0",
       "type": "peer"
     },
     {
@@ -123,17 +108,12 @@
     },
     {
       "name": "@gammarers/aws-secure-bucket",
-      "version": "~1.4.1",
-      "type": "runtime"
-    },
-    {
-      "name": "@gammarers/aws-secure-cloudfront-origin-bucket",
-      "version": "~1.6.11",
+      "version": "^2.3.0",
       "type": "runtime"
     },
     {
       "name": "@gammarers/aws-secure-frontend-web-app-cloudfront-distribution",
-      "version": "~1.4.7",
+      "version": "^2.0.0",
       "type": "runtime"
     }
   ],
