@@ -14,7 +14,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   keywords: ['aws', 'cdk', 'cloudfront', 'cdn', 'web', 'spa', 'deploy'],
   repositoryUrl: 'https://github.com/gammarers/aws-frontend-web-app-deploy-stack.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
-  majorVersion: 1,
+  majorVersion: 2,
   deps: [
     '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@^2.0.0',
     '@gammarers/aws-secure-bucket@^2.3.0',
