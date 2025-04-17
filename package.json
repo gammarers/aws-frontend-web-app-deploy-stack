@@ -37,13 +37,13 @@
     "organization": true
   },
   "devDependencies": {
-    "@gammarers/jest-aws-cdk-asset-filename-renamer": "~0.5.8",
+    "@gammarers/jest-aws-cdk-asset-filename-renamer": "^0.5.8",
     "@stylistic/eslint-plugin": "^2",
     "@types/jest": "^29.5.14",
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
-    "aws-cdk-lib": "2.80.0",
+    "aws-cdk-lib": "2.189.0",
     "commit-and-tag-version": "^12",
     "constructs": "10.0.5",
     "eslint": "^9",
@@ -62,16 +62,12 @@
     "typescript": "5.7.x"
   },
   "peerDependencies": {
-    "@gammarers/aws-secure-bucket": "~1.4.1",
-    "@gammarers/aws-secure-cloudfront-origin-bucket": "~1.6.11",
-    "@gammarers/aws-secure-frontend-web-app-cloudfront-distribution": "~1.4.7",
-    "aws-cdk-lib": "^2.80.0",
+    "aws-cdk-lib": "^2.189.0",
     "constructs": "^10.0.5"
   },
   "dependencies": {
-    "@gammarers/aws-secure-bucket": "~1.4.1",
-    "@gammarers/aws-secure-cloudfront-origin-bucket": "~1.6.11",
-    "@gammarers/aws-secure-frontend-web-app-cloudfront-distribution": "~1.4.7"
+    "@gammarers/aws-secure-bucket": "^2.3.0",
+    "@gammarers/aws-secure-frontend-web-app-cloudfront-distribution": "^2.0.0"
   },
   "keywords": [
     "aws",
