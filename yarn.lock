@@ -437,15 +437,15 @@
     "@eslint/core" "^0.13.0"
     levn "^0.4.1"
 
-"@gammarers/aws-secure-bucket@^2.3.0":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-bucket/-/aws-secure-bucket-2.3.1.tgz#af93dfa61ebd96baac193f21aec35522efbde6a0"
-  integrity sha512-TsiBBsCG1a0Kwpmm+NB/hlGeB2Rg+OPEuoNLQuSTEmJpsuzZM5OXelOnmN++r5uGGm7zAE4fFKyG1OOBEpwnbQ==
+"@gammarers/aws-secure-bucket@^2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-bucket/-/aws-secure-bucket-2.3.3.tgz#81b35961dd774e7a9ee1119e8febc68b160c9533"
+  integrity sha512-GcFU9wVkRGWuA1MxCleYoxHs10CkXHp2LIcn/X/ojvWmqlk+y7LeOpmdkfqCmfwndiai2qah+sVfO17B1eTqLw==
 
-"@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@^2.0.0":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-2.0.1.tgz#155c5af688d3011a88f56aef4a3779b336c6bacc"
-  integrity sha512-hFyNxEbYHIn7Nt5OQLdMhcrVdh8sL2jx/jY8NGKJA2GpUEhOQjrSaCDHXcoT7fW+AjQimYFM9FcKdwOtyzKawA==
+"@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-2.0.2.tgz#eee04c4c8ce2d3b5814c3500cb4b072e1c443633"
+  integrity sha512-TK5ZzXWFXuyyAbUfF3mp2jwoxNZM/r1GNvnkbyOvfFizbtp0iHRyCp1mQk9VgOPQGI4AvX0HpkI2L+bdg2KfwA==
 
 "@gammarers/jest-aws-cdk-asset-filename-renamer@^0.5.8":
   version "0.5.43"
@@ -1387,10 +1387,10 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk-lib@2.189.0:
-  version "2.189.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.189.0.tgz#b5964f1686215834b9f8497c131901c120355147"
-  integrity sha512-B5Uha7uRntOAyuKfU0eFtxij3ZVTzGAbetw5qaXlURa68wsWpKlU72/OyKugB6JYkhjCZkSTVVBxd1pVTosxEw==
+aws-cdk-lib@2.189.1:
+  version "2.189.1"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.189.1.tgz#57681865d0ff138a26299066695c06c46329bcb7"
+  integrity sha512-9JU0yUr2iRTJ1oCPrHyx7hOtBDWyUfyOcdb6arlumJnMcQr2cyAMASY8HuAXHc8Y10ipVp8dRTW+J4/132IIYA==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.229"
     "@aws-cdk/asset-node-proxy-agent-v6" "^2.1.0"
