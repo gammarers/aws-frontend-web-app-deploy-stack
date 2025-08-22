@@ -1,12 +1,17 @@
-import { SecureBucket } from '@gammarers/aws-secure-bucket';
+import { SecureBucket, SecureBucketType } from '@gammarers/aws-secure-bucket';
 import { SecureFrontendWebAppCloudFrontDistribution } from '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution';
 import * as cdk from 'aws-cdk-lib';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
+import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 import * as alias from 'aws-cdk-lib/aws-route53-targets';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import { Construct } from 'constructs';
+
+export interface CloudFrontOptions {
+  readonly priceClass?: cloudfront.PriceClass;
+}
 
 export interface FrontendWebAppDeployStackProps extends cdk.StackProps {
   readonly domainName: string;
@@ -14,6 +19,7 @@ export interface FrontendWebAppDeployStackProps extends cdk.StackProps {
   readonly originBucketName: string;
   readonly logBucketArn: string;
   readonly deploySourceAssetPath: string;
+  readonly cloudFrontOptions?: CloudFrontOptions;
 }
 
 export class FrontendWebAppDeployStack extends cdk.Stack {
@@ -23,7 +29,7 @@ export class FrontendWebAppDeployStack extends cdk.Stack {
     // 👇Create Secure Cloud Front Origin Bucket
     const originBucket = new SecureBucket(this, 'SecureCloudFrontOriginBucket', {
       bucketName: props.originBucketName,
-      isCloudFrontOriginBucket: true,
+      bucketType: SecureBucketType.CLOUD_FRONT_ORIGIN,
     });
 
     // 👇Get Hosted Zone.
@@ -45,6 +51,7 @@ export class FrontendWebAppDeployStack extends cdk.Stack {
       certificate: certificate,
       domainName: props.domainName,
       originBucket: originBucket,
+      priceClass: props.cloudFrontOptions?.priceClass,
     });
 
     // 👇Route 53 DNS (Alias)

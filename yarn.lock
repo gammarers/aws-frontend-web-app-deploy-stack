@@ -435,15 +435,15 @@
     "@eslint/core" "^0.15.2"
     levn "^0.4.1"
 
-"@gammarers/aws-secure-bucket@^2.3.3":
+"@gammarers/aws-secure-bucket@^2.4.1":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-bucket/-/aws-secure-bucket-2.4.1.tgz#ed804bdd1b381a061f63b3ef73f73fd17f280b17"
   integrity sha512-PtV0UjgrV5MnA9zp0+HTTpOJWGaCpuxPa0M7pCa3amSWDBqZvrW97W5Ru0DOjAlU6gKKLbw8J5AmYvzYTD420g==
 
-"@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@^2.0.2":
-  version "2.0.20"
-  resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-2.0.20.tgz#d9e72911493033bbc4f6653d52bb0c60b9956de8"
-  integrity sha512-OrIZPIsb3qcIYcroWnXWG3jdEOTTGIs2IYR80gPDzqX3GgFNqFX+Whk+tp6s8hS0bClnhyz5BusY1F3mCcDWtQ==
+"@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-2.1.0.tgz#7593a3ced38f194a53a7e10b0061716529c8789f"
+  integrity sha512-s2LYBczFzwduwTz+1mYvhuupPThjqWokIp1ZJQisTXYvvmbVwt18KwZRxF9pK6lyfeRYtYizomibtiPQyQ2NXA==
 
 "@gammarers/jest-aws-cdk-asset-filename-renamer@^0.5.8":
   version "0.5.61"
@@ -3875,10 +3875,10 @@ jsii-reflect@^1.113.0:
     oo-ascii-tree "^1.113.0"
     yargs "^16.2.0"
 
-jsii-rosetta@5.7.x:
-  version "5.7.22"
-  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.7.22.tgz#d920799806bf87856a5c8e1d21d45282a0b08dce"
-  integrity sha512-ClpwEpwMYr/H+UnaHUn2ReuOei+QwoecQ9LrIix01Gj9Z/fjUqicaJLRcagxRsFqRQasfH9YJH4oQOIsKThWjA==
+jsii-rosetta@5.8.x:
+  version "5.8.14"
+  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-5.8.14.tgz#d629dc0d0b60161e8d3e26139785532d1d370a71"
+  integrity sha512-ORsag/CQje0sxJYuMjKcXbyWUhO6MiSjFWeNLkdDskJdJQeu6McFUfUujQMuq4xMKjpKBGsyJw3I9cA98Hfvqg==
   dependencies:
     "@jsii/check-node" "1.113.0"
     "@jsii/spec" "^1.113.0"
@@ -3886,18 +3886,18 @@ jsii-rosetta@5.7.x:
     chalk "^4"
     commonmark "^0.31.2"
     fast-glob "^3.3.3"
-    jsii "~5.7.0"
+    jsii "~5.8.0"
     semver "^7.7.2"
     semver-intersect "^1.5.0"
     stream-json "^1.9.1"
-    typescript "~5.7"
+    typescript "~5.8"
     workerpool "^6.5.1"
     yargs "^17.7.2"
 
-jsii@5.7.x, jsii@~5.7.0:
-  version "5.7.22"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.7.22.tgz#e2347f9a16b4132e93d459c0da6d82af64119ce8"
-  integrity sha512-hphnBdNJMhiNOreQX/rdY2hifdKEY2SZ/sQSIxNkAWftj+hhgv34Y1wNijZAKfzUbHykGJCkD6ksSUbeCy6RyA==
+jsii@5.8.x, jsii@~5.8.0:
+  version "5.8.18"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.8.18.tgz#55a6f6a70aaf758b3ebdbf5bf274fa8c8c6a0f2e"
+  integrity sha512-MG0VdBNAfIPl481J0hhDIwg/AVnUhLI0Y7IcsFqFaMQAEGm1op16EfMZJkNLqENqfW1sACtn1MG++hueYEg2Fw==
   dependencies:
     "@jsii/check-node" "1.113.0"
     "@jsii/spec" "^1.113.0"
@@ -3909,7 +3909,7 @@ jsii@5.7.x, jsii@~5.7.0:
     semver-intersect "^1.5.0"
     sort-json "^2.0.1"
     spdx-license-list "^6.10.0"
-    typescript "~5.7"
+    typescript "~5.8"
     yargs "^17.7.2"
 
 json-buffer@3.0.1:
@@ -5568,10 +5568,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
 
-typescript@5.7.x, typescript@~5.7:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.3.tgz#919b44a7dbb8583a9b856d162be24a54bf80073e"
-  integrity sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==
+typescript@5.8.x, typescript@~5.8:
+  version "5.8.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.8.3.tgz#92f8a3e5e3cf497356f4178c34cd65a7f5e8440e"
+  integrity sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==
 
 uglify-js@^3.1.4:
   version "3.19.3"

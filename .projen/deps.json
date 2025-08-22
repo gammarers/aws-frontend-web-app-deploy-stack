@@ -71,12 +71,12 @@
     },
     {
       "name": "jsii-rosetta",
-      "version": "5.7.x",
+      "version": "5.8.x",
       "type": "build"
     },
     {
       "name": "jsii",
-      "version": "5.7.x",
+      "version": "5.8.x",
       "type": "build"
     },
     {
@@ -93,7 +93,7 @@
     },
     {
       "name": "typescript",
-      "version": "5.7.x",
+      "version": "5.8.x",
       "type": "build"
     },
     {
@@ -108,12 +108,12 @@
     },
     {
       "name": "@gammarers/aws-secure-bucket",
-      "version": "^2.3.3",
+      "version": "^2.4.1",
       "type": "runtime"
     },
     {
       "name": "@gammarers/aws-secure-frontend-web-app-cloudfront-distribution",
-      "version": "^2.0.2",
+      "version": "^2.1.0",
       "type": "runtime"
     }
   ],

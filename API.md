@@ -877,6 +877,34 @@ Whether termination protection is enabled for this stack.
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### CloudFrontOptions <a name="CloudFrontOptions" id="@gammarers/aws-frontend-web-app-deploy-stack.CloudFrontOptions"></a>
+
+#### Initializer <a name="Initializer" id="@gammarers/aws-frontend-web-app-deploy-stack.CloudFrontOptions.Initializer"></a>
+
+```typescript
+import { CloudFrontOptions } from '@gammarers/aws-frontend-web-app-deploy-stack'
+
+const cloudFrontOptions: CloudFrontOptions = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@gammarers/aws-frontend-web-app-deploy-stack.CloudFrontOptions.property.priceClass">priceClass</a></code> | <code>aws-cdk-lib.aws_cloudfront.PriceClass</code> | *No description.* |
+
+---
+
+##### `priceClass`<sup>Optional</sup> <a name="priceClass" id="@gammarers/aws-frontend-web-app-deploy-stack.CloudFrontOptions.property.priceClass"></a>
+
+```typescript
+public readonly priceClass: PriceClass;
+```
+
+- *Type:* aws-cdk-lib.aws_cloudfront.PriceClass
+
+---
+
 ### FrontendWebAppDeployStackProps <a name="FrontendWebAppDeployStackProps" id="@gammarers/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps"></a>
 
 #### Initializer <a name="Initializer" id="@gammarers/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.Initializer"></a>
@@ -907,6 +935,7 @@ const frontendWebAppDeployStackProps: FrontendWebAppDeployStackProps = { ... }
 | <code><a href="#@gammarers/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.hostedZoneId">hostedZoneId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@gammarers/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.logBucketArn">logBucketArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@gammarers/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.originBucketName">originBucketName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@gammarers/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.cloudFrontOptions">cloudFrontOptions</a></code> | <code><a href="#@gammarers/aws-frontend-web-app-deploy-stack.CloudFrontOptions">CloudFrontOptions</a></code> | *No description.* |
 
 ---
 
@@ -1180,6 +1209,16 @@ public readonly originBucketName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `cloudFrontOptions`<sup>Optional</sup> <a name="cloudFrontOptions" id="@gammarers/aws-frontend-web-app-deploy-stack.FrontendWebAppDeployStackProps.property.cloudFrontOptions"></a>
+
+```typescript
+public readonly cloudFrontOptions: CloudFrontOptions;
+```
+
+- *Type:* <a href="#@gammarers/aws-frontend-web-app-deploy-stack.CloudFrontOptions">CloudFrontOptions</a>
 
 ---
 

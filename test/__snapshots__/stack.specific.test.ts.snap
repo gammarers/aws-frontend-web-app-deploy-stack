@@ -508,7 +508,7 @@ exports[`FrontendWebAppDeployStack Testing Should match snapshot 1`] = `
               },
             },
           ],
-          "PriceClass": "PriceClass_All",
+          "PriceClass": "PriceClass_100",
           "ViewerCertificate": {
             "AcmCertificateArn": {
               "Ref": "Certificate4E7ABB08",

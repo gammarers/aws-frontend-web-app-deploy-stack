@@ -5,8 +5,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   authorAddress: 'yicr@users.noreply.github.com',
   authorOrganization: true,
   cdkVersion: '2.189.1',
-  typescriptVersion: '5.7.x',
-  jsiiVersion: '5.7.x',
+  typescriptVersion: '5.8.x',
+  jsiiVersion: '5.8.x',
   projenrcTs: true,
   defaultReleaseBranch: 'main',
   name: '@gammarers/aws-frontend-web-app-deploy-stack',
@@ -16,8 +16,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   npmAccess: javascript.NpmAccess.PUBLIC,
   majorVersion: 2,
   deps: [
-    '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@^2.0.2',
-    '@gammarers/aws-secure-bucket@^2.3.3',
+    '@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@^2.1.0',
+    '@gammarers/aws-secure-bucket@^2.4.1',
   ],
   devDeps: [
     '@gammarers/jest-aws-cdk-asset-filename-renamer@^0.5.8',
