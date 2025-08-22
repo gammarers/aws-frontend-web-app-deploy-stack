@@ -2,22 +2,19 @@ import * as cdk from 'aws-cdk-lib';
 import { Template, Match } from 'aws-cdk-lib/assertions';
 import { FrontendWebAppDeployStack } from '../src';
 
-describe('FrontendWebAppDeployStack Testing', () => {
-  let template: Template;
+describe('FrontendWebAppDeployStack default Testing', () => {
 
   // Create template.
-  beforeAll(() => {
-    const app = new cdk.App();
-    const stack = new FrontendWebAppDeployStack(app, 'FrontendWebAppDeployStack', {
-      env: { account: '012345678901', region: 'us-east-1' },
-      domainName: 'example.com',
-      hostedZoneId: 'Z0000000000000000000Q',
-      originBucketName: 'frontend-web-app-example-origin-bucket',
-      deploySourceAssetPath: 'website/',
-      logBucketArn: 'arn:aws:s3:::frontend-web-app-example-access-log-bucket',
-    });
-    template = Template.fromStack(stack);
+  const app = new cdk.App();
+  const stack = new FrontendWebAppDeployStack(app, 'FrontendWebAppDeployStack', {
+    env: { account: '012345678901', region: 'us-east-1' },
+    domainName: 'example.com',
+    hostedZoneId: 'Z0000000000000000000Q',
+    originBucketName: 'frontend-web-app-example-origin-bucket',
+    deploySourceAssetPath: 'website/',
+    logBucketArn: 'arn:aws:s3:::frontend-web-app-example-access-log-bucket',
   });
+  const template = Template.fromStack(stack);
 
   it('Has Origin Bucket', () => {
     template.hasResourceProperties('AWS::S3::Bucket', {
