@@ -435,15 +435,15 @@
     "@eslint/core" "^0.15.2"
     levn "^0.4.1"
 
-"@gammarers/aws-secure-bucket@^2.3.3":
+"@gammarers/aws-secure-bucket@^2.4.1":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-bucket/-/aws-secure-bucket-2.4.1.tgz#ed804bdd1b381a061f63b3ef73f73fd17f280b17"
   integrity sha512-PtV0UjgrV5MnA9zp0+HTTpOJWGaCpuxPa0M7pCa3amSWDBqZvrW97W5Ru0DOjAlU6gKKLbw8J5AmYvzYTD420g==
 
-"@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@^2.0.2":
-  version "2.0.20"
-  resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-2.0.20.tgz#d9e72911493033bbc4f6653d52bb0c60b9956de8"
-  integrity sha512-OrIZPIsb3qcIYcroWnXWG3jdEOTTGIs2IYR80gPDzqX3GgFNqFX+Whk+tp6s8hS0bClnhyz5BusY1F3mCcDWtQ==
+"@gammarers/aws-secure-frontend-web-app-cloudfront-distribution@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@gammarers/aws-secure-frontend-web-app-cloudfront-distribution/-/aws-secure-frontend-web-app-cloudfront-distribution-2.1.0.tgz#7593a3ced38f194a53a7e10b0061716529c8789f"
+  integrity sha512-s2LYBczFzwduwTz+1mYvhuupPThjqWokIp1ZJQisTXYvvmbVwt18KwZRxF9pK6lyfeRYtYizomibtiPQyQ2NXA==
 
 "@gammarers/jest-aws-cdk-asset-filename-renamer@^0.5.8":
   version "0.5.61"

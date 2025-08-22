@@ -66,8 +66,8 @@
     "constructs": "^10.0.5"
   },
   "dependencies": {
-    "@gammarers/aws-secure-bucket": "^2.3.3",
-    "@gammarers/aws-secure-frontend-web-app-cloudfront-distribution": "^2.0.2"
+    "@gammarers/aws-secure-bucket": "^2.4.1",
+    "@gammarers/aws-secure-frontend-web-app-cloudfront-distribution": "^2.1.0"
   },
   "keywords": [
     "aws",
